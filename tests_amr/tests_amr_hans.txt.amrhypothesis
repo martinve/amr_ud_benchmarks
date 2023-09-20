@@ -1,0 +1,933 @@
+# ::id 0
+# ::snt The doctor advised the president ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG2 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / president))))
+
+# ::id 1
+# ::snt The managers saw the student ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (s2 / study-01)))
+
+# ::id 2
+# ::snt The tourists supported the professors ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :mod (t / tourist))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / professor))))
+
+# ::id 3
+# ::snt The doctor supported the senators ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / senator))))
+
+# ::id 4
+# ::snt The senator admired the judges ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / senator)))
+      :ARG1 (p2 / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 5
+# ::snt The banker supported the professor ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (b / banker)
+      :ARG1 (p / professor))
+
+# ::id 6
+# ::snt The doctors saw the judge ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (p / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 7
+# ::snt The professor stopped the president ?
+(s / stop-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / professor)))
+      :ARG1 (p3 / person
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (p4 / president))))
+
+# ::id 8
+# ::snt The artists called the judges ?
+(c / call-02
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / artist)
+      :ARG1 (p / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 9
+# ::snt The judge helped the students ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (j / judge-01))
+      :ARG2 (p2 / person
+            :ARG0-of (s / study-01)))
+
+# ::id 10
+# ::snt The scientist advised the lawyer ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG2 (l / lawyer))
+
+# ::id 11
+# ::snt The athletes helped the president ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG2 (p / person
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (p2 / president))))
+
+# ::id 12
+# ::snt The senator contacted the manager ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / senator)
+      :ARG1 (p / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 13
+# ::snt The bankers avoided the scientist ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (b / banker)
+      :ARG1 (s / scientist))
+
+# ::id 14
+# ::snt The manager saw the actors ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / act-01)))
+
+# ::id 15
+# ::snt The scientist stopped the student ?
+(s / stop-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s2 / scientist)
+      :ARG1 (p / person
+            :ARG0-of (s3 / study-01)))
+
+# ::id 16
+# ::snt The lawyers admired the the secretaries ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (l / lawyer)
+      :ARG1 (s / secretary))
+
+# ::id 17
+# ::snt The professor contacted the authors ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / professor)
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 18
+# ::snt The judges encouraged the lawyer ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (j / judge-01))
+      :ARG1 (l / lawyer))
+
+# ::id 19
+# ::snt The senators helped the the professors ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (s / senator)))
+      :ARG2 (p2 / person
+            :ARG0-of (h3 / have-org-role-91
+                  :ARG2 (p3 / professor))))
+
+# ::id 20
+# ::snt The tourists introduced the manager ?
+(ii / introduce-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 21
+# ::snt The tourists saw the lawyer ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (l / lawyer))
+
+# ::id 22
+# ::snt The lawyer admired the students ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (l / lawyer)
+      :ARG1 (p / person
+            :ARG0-of (s / study-01)))
+
+# ::id 23
+# ::snt The tourists recognized the lawyers ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (l / lawyer))))
+
+# ::id 24
+# ::snt The authors helped the judges ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / author-01))
+      :ARG2 (p2 / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 25
+# ::snt The secretary thanked the author ?
+(t / thank-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / secretary)
+      :ARG1 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 26
+# ::snt The athlete believed the actor ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG1 (p / person
+            :ARG0-of (a3 / act-01)))
+
+# ::id 27
+# ::snt The managers believed the author ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 28
+# ::snt The lawyers helped the secretaries ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (l / lawyer)
+      :ARG1 (p / person
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (s / secretary))))
+
+# ::id 29
+# ::snt The athlete encouraged the secretary ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG1 (s / secretary))
+
+# ::id 30
+# ::snt The scientist saw the actor ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s2 / scientist)
+      :ARG1 (p / person
+            :ARG0-of (a2 / act-01)))
+
+# ::id 31
+# ::snt The athletes contacted the professor ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG1 (p / professor))
+
+# ::id 32
+# ::snt The artists admired the senator ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (a3 / artist)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / senator))))
+
+# ::id 33
+# ::snt The professors advised the lawyers ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / professor)
+      :ARG2 (l / lawyer))
+
+# ::id 34
+# ::snt The artist encouraged the banker ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / artist)
+      :ARG1 (b / banker))
+
+# ::id 35
+# ::snt The banker thanked the judges ?
+(t / thank-01
+      :polarity (a / amr-unknown)
+      :ARG0 (b / banker)
+      :ARG1 (p / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 36
+# ::snt The scientist advised the banker ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG2 (b / banker))
+
+# ::id 37
+# ::snt The tourist thanked the manager ?
+(t / thank-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t2 / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 38
+# ::snt The managers advised the athlete ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG2 (a3 / athlete))
+
+# ::id 39
+# ::snt The lawyers recommended the doctor ?
+(r / recommend-01
+      :polarity (a / amr-unknown)
+      :ARG0 (l / lawyer)
+      :ARG1 (d / doctor))
+
+# ::id 40
+# ::snt The professor helped the doctors ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / professor)
+      :ARG2 (d / doctor))
+
+# ::id 41
+# ::snt The scientist recommended the doctor ?
+(r / recommend-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG2 (d / doctor))
+
+# ::id 42
+# ::snt The secretary saw the managers ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / secretary)))
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 43
+# ::snt The tourists advised the presidents ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG2 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / president))))
+
+# ::id 44
+# ::snt The judges recognized the president ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (j / judge-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / president))))
+
+# ::id 45
+# ::snt The students recommended the lawyer ?
+(r / recommend-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01))
+      :ARG1 (l / lawyer))
+
+# ::id 46
+# ::snt The judges believed the artist ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (j / judge-01))
+      :ARG1 (a2 / artist))
+
+# ::id 47
+# ::snt The bankers supported the doctor ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (b / banker)
+      :ARG1 (d / doctor))
+
+# ::id 48
+# ::snt The senator encouraged the professor ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / senator)
+      :ARG1 (p / professor))
+
+# ::id 49
+# ::snt The artists believed the president ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / artist)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / president))))
+
+# ::id 50
+# ::snt The tourist believed the authors ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 51
+# ::snt The artists admired the secretaries ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (a3 / artist)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / secretary))))
+
+# ::id 52
+# ::snt The students contacted the actors ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / act-01)))
+
+# ::id 53
+# ::snt The authors avoided the professor ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a3 / author-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / professor))))
+
+# ::id 54
+# ::snt The actors introduced the managers ?
+(ii / introduce-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / act-01))
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 55
+# ::snt The athletes recognized the banker ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG1 (b / banker))
+
+# ::id 56
+# ::snt The actors avoided the senators ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a3 / act-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / senator))))
+
+# ::id 57
+# ::snt The secretaries thanked the artist ?
+(t / thank-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / secretary)))
+      :ARG1 (p2 / person
+            :ARG0-of (p3 / paint-01)))
+
+# ::id 58
+# ::snt The bankers called the doctor ?
+(c / call-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (b / bank-01))
+      :ARG1 (d / doctor))
+
+# ::id 59
+# ::snt The president advised the authors ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / president)))
+      :ARG2 (p3 / person
+            :ARG0-of (a3 / author-01)))
+
+# ::id 60
+# ::snt The professors admired the managers ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / professor)
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 61
+# ::snt The actors saw the author ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / act-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a3 / author-01)))
+
+# ::id 62
+# ::snt The tourists admired the athletes ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (a3 / athlete))))
+
+# ::id 63
+# ::snt The professors recommended the student ?
+(r / recommend-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / professor)))
+      :ARG2 (p3 / person
+            :ARG0-of (s / study-01)))
+
+# ::id 64
+# ::snt The secretaries encouraged the actors ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / secretary)))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / act-01)))
+
+# ::id 65
+# ::snt The managers encouraged the lawyer ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (l / lawyer))))
+
+# ::id 66
+# ::snt The tourist supported the authors ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 67
+# ::snt The athlete contacted the tourists ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG1 (p / person
+            :ARG0-of (t / tour-01)))
+
+# ::id 68
+# ::snt The president encouraged the actor ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / president)
+      :ARG1 (p2 / person
+            :ARG0-of (a2 / act-01)))
+
+# ::id 69
+# ::snt The professor mentioned the artist ?
+(m / mention-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / professor)
+      :ARG1 (a2 / artist))
+
+# ::id 70
+# ::snt The manager knew the tourists ?
+(k / know-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (t / tour-01)))
+
+# ::id 71
+# ::snt The manager knew the athlete ?
+(k / know-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (a2 / athlete))
+
+# ::id 72
+# ::snt The professors performed ?
+(p / perform-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / professor))
+
+# ::id 73
+# ::snt The doctors supported the authors ?
+(s / support-01
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 74
+# ::snt The senators shouted ?
+(s / shout-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / senator))))
+
+# ::id 75
+# ::snt The scientist ran ?
+(r / run-02
+      :polarity (a / amr-unknown)
+      :ARG0 (s / scientist))
+
+# ::id 76
+# ::snt The scientist presented in the school ?
+(p / present-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / scientist)
+      :location (s2 / school))
+
+# ::id 77
+# ::snt The athletes presented in the library ?
+(a / athlete
+      :polarity (a2 / amr-unknown)
+      :ARG1-of (p / present-01
+            :location (l / library)))
+
+# ::id 78
+# ::snt The managers presented in the laboratory ?
+(p / present-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :ARG0-of (m / manage-01))
+      :location (l / laboratory))
+
+# ::id 79
+# ::snt The students fought the secretary ?
+(f / fight-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / secretary))))
+
+# ::id 80
+# ::snt The scientists admired the doctors ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG1 (d / doctor))
+
+# ::id 81
+# ::snt The banker saw the author ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (b / banker)
+      :ARG1 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 82
+# ::snt The scientists believed the lawyers ?
+(b / believe-01
+      :polarity (a / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG1 (l / lawyer))
+
+# ::id 83
+# ::snt The authors avoided the managers ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a3 / author-01))
+      :ARG1 (p2 / person
+            :ARG0-of (m / manage-01)))
+
+# ::id 84
+# ::snt Students introduced the judges ?
+(ii / introduce-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01))
+      :ARG1 (p2 / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 85
+# ::snt Judges saw the athletes ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (j / judge-01))
+      :ARG1 (a2 / athlete))
+
+# ::id 86
+# ::snt The presidents paid ?
+(p / pay-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / president))))
+
+# ::id 87
+# ::snt The authors ate ?
+(e / eat-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 88
+# ::snt The managers admired the authors ?
+(a / admire-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (m / manage-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a3 / author-01)))
+
+# ::id 89
+# ::snt The artists avoided the athlete ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (a3 / artist)
+      :ARG1 (a4 / athlete))
+
+# ::id 90
+# ::snt The secretaries advised the senators ?
+(a / advise-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (s / secretary)
+      :ARG2 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / senator))))
+
+# ::id 91
+# ::snt The authors thanked the athletes ?
+(t / thank-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / author-01))
+      :ARG1 (a3 / athlete))
+
+# ::id 92
+# ::snt The doctors stopped the author ?
+(s / stop-01
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 93
+# ::snt The professor danced ?
+(d / dance-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / professor))
+
+# ::id 94
+# ::snt The tourist saw the scientist ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (s2 / scientist))
+
+# ::id 95
+# ::snt The athlete slept ?
+(s / sleep-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete))
+
+# ::id 96
+# ::snt The actor recommended the lawyers ?
+(r / recommend-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / act-01))
+      :ARG2 (p2 / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (l / lawyer))))
+
+# ::id 97
+# ::snt The athletes helped the judges ?
+(h / help-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / athlete)
+      :ARG2 (p / person
+            :ARG0-of (j / judge-01)))
+
+# ::id 98
+# ::snt The tourists avoided the student ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (s / study-01)))
+
+# ::id 99
+# ::snt The tourists avoided the doctors ?
+(a / avoid-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (d / doctor))))
+
+# ::id 100
+# ::snt The presidents ran ?
+(r / run-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / president))))
+
+# ::id 101
+# ::snt The doctor recognized the author ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (p / person
+            :ARG0-of (a2 / author-01)))
+
+# ::id 102
+# ::snt The actor recognized the professor ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / act-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / professor))))
+
+# ::id 103
+# ::snt The senator danced ?
+(d / dance-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / senator))))
+
+# ::id 104
+# ::snt The students slept ?
+(s / sleep-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s2 / study-01)))
+
+# ::id 105
+# ::snt The students ran ?
+(r / run-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01)))
+
+# ::id 106
+# ::snt The tourists introduced the presidents ?
+(ii / introduce-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (t / tour-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p3 / president))))
+
+# ::id 107
+# ::snt The students contacted the senators ?
+(c / contact-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (s / study-01))
+      :ARG1 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s2 / senator))))
+
+# ::id 108
+# ::snt The secretary performed ?
+(p / perform-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (s / secretary))))
+
+# ::id 109
+# ::snt The scientists recognized the lawyer ?
+(r / recognize-02
+      :polarity (a / amr-unknown)
+      :ARG0 (s / scientist)
+      :ARG1 (l / lawyer))
+
+# ::id 110
+# ::snt The author encouraged the actors ?
+(e / encourage-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (a2 / author-01))
+      :ARG1 (p2 / person
+            :ARG0-of (a3 / act-01)))
+
+# ::id 111
+# ::snt The doctors saw the secretary ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (d / doctor)
+      :ARG1 (s2 / secretary))

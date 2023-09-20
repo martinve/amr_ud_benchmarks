@@ -1,0 +1,42 @@
+True
+False
+True
+True
+False
+False
+None
+False
+Maybe false.
+Harry
+Mr Dursley
+True
+Alan
+None
+None
+False
+False
+True
+Likely true
+False
+False
+Likely Arthur
+Bill, Colin and Dave
+True
+None
+True
+True
+True
+None
+None
+True
+True
+A radio.
+None
+True
+None
+True
+None
+True
+None
+None
+The bald eagle

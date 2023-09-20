@@ -1,0 +1,107 @@
+
+=== running test tests_sick_validation_100.py ===
+
+Starting to run 100 tests
+0111111000111011111011111110111110011001101010111111000101101011110101110111011101101111110001001110
+Testing finished in 99.832 seconds
+Tests run: 100
+OK tests: 68
+Failed tests: 32
+
+Tests which failed:
+Input: The young boys are playing outdoors and the man is smiling nearby . There is no boy playing outdoors and there is no man smiling ?
+Expected: False
+Received: Unknown.
+Input: Two dogs are playing by a tree . Two dogs are playing by a plant ?
+Expected: True
+Received: Unknown.
+Input: A girl in white is dancing . A girl is wearing white clothes and is dancing ?
+Expected: True
+Received: Unknown.
+Input: There is no girl in white dancing . A girl in white is dancing ?
+Expected: False
+Received: Unknown.
+Input: A hiker is on top of the mountain and is doing a joyful dance . A hiker is on top of the mountain and is dancing ?
+Expected: True
+Received: Unknown.
+Input: A white and tan dog is running through the tall and green grass . A white and tan dog is running through a field ?
+Expected: True
+Received: Unknown.
+Input: A woman is taking off a cloak, which is very large, and revealing an extravagant dress . A woman is putting on a cloak, which is very large, and concealing an extravagant dress ?
+Expected: False
+Received: Unknown.
+Input: A few men in a competition are running outside . A few men in a competition are running indoors ?
+Expected: False
+Received: Unknown.
+Input: A few men in a competition are running outside . A few men are running competitions outside ?
+Expected: None
+Received: Did not understand the question: try to rephrase.
+Input: A group of people is equipped with protective gear . A group of people is equipped with gear used for protection ?
+Expected: True
+Received: Unknown.
+Input: One white dog and one black one are running side by side on the grass . A dog, which has a black coat, and a white dog are running on the grass ?
+Expected: True
+Received: Software error.
+Input: A woman is being kissed by a man . There is no woman being kissed by a man ?
+Expected: False
+Received: Unknown.
+Input: Some corndogs are being eaten by two toddlers who are in a wagon, which is really small . Two toddlers are eating corndogs in a wagon, which is really small ?
+Expected: True
+Received: Unknown.
+Input: An adult is in the amphitheater and is talking to a boy . There is no adult in the amphitheater talking to a boy ?
+Expected: False
+Received: Software error.
+Input: A woman is combing her hair . There is no woman combing her hair ?
+Expected: False
+Received: Unknown.
+Input: A man and a woman are hiking through a wooded area . A man and a woman are walking together through the woods ?
+Expected: True
+Received: Unknown.
+Input: A man and a woman are walking together through the woods . A man and a woman are walking through a wooded area ?
+Expected: True
+Received: Unknown.
+Input: A woman is dancing and singing alone . A woman is dancing and singing with other women ?
+Expected: False
+Received: Unknown.
+Input: A band is playing on a stage . A band is playing onstage ?
+Expected: True
+Received: Unknown.
+Input: The woman is measuring the other woman . A woman is being measured by another woman ?
+Expected: True
+Received: Unknown.
+Input: Men are sawing logs . Men are cutting wood ?
+Expected: True
+Received: Unknown.
+Input: Three young men are running, jumping and kicking near a vending machine . There is no man running, jumping and kicking near a vending machine ?
+Expected: False
+Received: Unknown.
+Input: A man is playing a guitar . A man is strumming a guitar ?
+Expected: True
+Received: Unknown.
+Input: A hole is being burrowed by the badger . A badger is shrewdly digging the earth ?
+Expected: True
+Received: Unknown.
+Input: The milk is being drunk by a cat . The cat is drinking some milk ?
+Expected: True
+Received: Unknown.
+Input: A flute is being played in a lovely way by a girl . A flute is being played by a girl ?
+Expected: True
+Received: Unknown.
+Input: The food on the trays is being eaten by the kittens . A few kittens are eating ?
+Expected: True
+Received: Unknown.
+Input: One person is playing the guitar and singing . A person is playing a guitar and singing ?
+Expected: True
+Received: Unknown.
+Input: The horse is being ridden by a man . A man is riding the horse ?
+Expected: True
+Received: Unknown.
+Input: A lady is cutting up some meat precisely . Some meat is being cut into pieces by a woman ?
+Expected: True
+Received: Unknown.
+Input: The man is denying an interview . The man is granting an interview ?
+Expected: False
+Received: Unknown.
+Input: A woman is sewing with a machine . A woman is using a machine made for sewing ?
+Expected: True
+Received: Unknown.

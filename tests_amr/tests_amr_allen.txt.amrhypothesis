@@ -1,0 +1,336 @@
+# ::id 0
+# ::snt Nails conduct electricity?
+(c / conduct-01
+      :polarity (a / amr-unknown)
+      :ARG0 (n / nail)
+      :ARG1 (e / electricity))
+
+# ::id 1
+# ::snt Nails conduct electricity?
+(c / conduct-01
+      :polarity (a / amr-unknown)
+      :ARG0 (n / nail)
+      :ARG1 (e / electricity))
+
+# ::id 2
+# ::snt Harry can do magic?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (d / do-02
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Harry"))
+            :ARG1 (m / magic)))
+
+# ::id 3
+# ::snt Harry can vanish?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (v / vanish-01
+            :ARG1 (p2 / person
+                  :name (n / name
+                        :op1 "Harry"))))
+
+# ::id 4
+# ::snt Mr Dursley can do magic?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (d / do-02
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Mr"
+                        :op2 "Dursley"))
+            :ARG1 (m / magic)))
+
+# ::id 5
+# ::snt Mr Dursley can vanish?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (v / vanish-01
+            :ARG1 (p2 / person
+                  :name (n / name
+                        :op1 "Mr"
+                        :op2 "Dursley"))))
+
+# ::id 6
+# ::snt Muggles can vanish?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (v / vanish-01
+            :ARG1 (m / muggle)))
+
+# ::id 7
+# ::snt Muggles can vanish?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (v / vanish-01
+            :ARG1 (m / muggle)))
+
+# ::id 8
+# ::snt Harry is a Muggle?
+(m / muggle
+      :polarity (a / amr-unknown)
+      :domain (p / person
+            :name (n / name
+                  :op1 "Harry")))
+
+# ::id 9
+# ::snt Who can vanish?
+(p / possible-01
+      :ARG1 (v / vanish-01
+            :ARG1 (a / amr-unknown)))
+
+# ::id 10
+# ::snt Who cannot vanish?
+(p / possible-01
+      :polarity -
+      :ARG1 (v / vanish-01
+            :ARG1 (a / amr-unknown)))
+
+# ::id 11
+# ::snt Alan pays UK pension tax?
+(p / pay-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :name (n / name
+                  :op1 "Alan"))
+      :ARG1 (t / tax-01
+            :ARG3 (p3 / pension)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "UK"))))
+
+# ::id 12
+# ::snt Who pays UK pension tax?
+(p / pay-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (t / tax-01
+            :ARG3 (p2 / pension)
+            :mod (c / country
+                  :name (n / name
+                        :op1 "UK"))))
+
+# ::id 13
+# ::snt Alan pays pension tax in France?
+(p / pay-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :name (n / name
+                  :op1 "Alan"))
+      :ARG1 (t / tax-01
+            :ARG3 (p3 / pension))
+      :location (c / country
+            :name (n2 / name
+                  :op1 "France")))
+
+# ::id 14
+# ::snt Alan pays UK beard tax?
+(p / pay-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p2 / person
+            :name (n / name
+                  :op1 "Alan"))
+      :ARG1 (t / tax-01
+            :ARG3 (b / beard)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "UK"))))
+
+# ::id 15
+# ::snt Colin can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Colin"))))
+
+# ::id 16
+# ::snt Bill can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Bill"))))
+
+# ::id 17
+# ::snt Arthur can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG1 (p2 / person
+                  :name (n / name
+                        :op1 "Arthur"))))
+
+# ::id 18
+# ::snt Arthur can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG1 (p2 / person
+                  :name (n / name
+                        :op1 "Arthur"))))
+
+# ::id 19
+# ::snt Bill can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Bill"))))
+
+# ::id 20
+# ::snt Colin can fly?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (f / fly-01
+            :ARG0 (p2 / person
+                  :name (n / name
+                        :op1 "Colin"))))
+
+# ::id 21
+# ::snt Who can fly?
+(p / possible-01
+      :ARG1 (f / fly-01
+            :ARG0 (a / amr-unknown)))
+
+# ::id 22
+# ::snt Who can not fly?
+(p / possible-01
+      :polarity -
+      :ARG1 (f / fly-01
+            :ARG0 (a / amr-unknown)))
+
+# ::id 23
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 24
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 25
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 26
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 27
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 28
+# ::snt The bell is ringing?
+(r / ring-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bell))
+
+# ::id 29
+# ::snt The light bulb is glowing?
+(g / glow-01
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bulb
+            :mod (l / light)))
+
+# ::id 30
+# ::snt The light bulb is glowing or the radio is playing?
+(a / amr-choice
+      :op1 (g / glow-01
+            :ARG1 (b / bulb
+                  :mod (l / light)))
+      :op2 (p / play-11
+            :ARG0 (r / radio)))
+
+# ::id 31
+# ::snt The light bulb is glowing and the radio is playing?
+(a / and
+      :polarity (a2 / amr-unknown)
+      :op1 (g / glow-01
+            :ARG1 (b / bulb
+                  :mod (l / light)))
+      :op2 (p / play-11
+            :ARG0 (r / radio)))
+
+# ::id 32
+# ::snt What is playing?
+(p / play-01
+      :ARG1 (a / amr-unknown))
+
+# ::id 33
+# ::snt What is playing?
+(p / play-01
+      :ARG1 (a / amr-unknown))
+
+# ::id 34
+# ::snt Fiona is not furry?
+(f / furry
+      :polarity -
+      :domain (p / person
+            :name (n / name
+                  :op1 "Fiona"))
+      :polarity (a / amr-unknown))
+
+# ::id 35
+# ::snt Fiona is not furry?
+(f / furry
+      :polarity -
+      :domain (p / person
+            :name (n / name
+                  :op1 "Fiona"))
+      :polarity (a / amr-unknown))
+
+# ::id 36
+# ::snt Fiona is not furry?
+(f / furry
+      :polarity -
+      :domain (p / person
+            :name (n / name
+                  :op1 "Fiona"))
+      :polarity (a / amr-unknown))
+
+# ::id 37
+# ::snt Fiona is big?
+(b / big
+      :polarity (a / amr-unknown)
+      :domain (p / person
+            :name (n / name
+                  :op1 "Fiona")))
+
+# ::id 38
+# ::snt The bald eagle is not kind?
+(k / kind-01
+      :polarity -
+      :ARG0 (e / eagle
+            :mod (b / bald))
+      :polarity (a / amr-unknown))
+
+# ::id 39
+# ::snt The bear is red?
+(r / red-02
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bear))
+
+# ::id 40
+# ::snt The bear is round?
+(r / round-04
+      :polarity (a / amr-unknown)
+      :ARG1 (b / bear))
+
+# ::id 41
+# ::snt Who is cold?
+(c / cold-01
+      :ARG1 (a / amr-unknown))

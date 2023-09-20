@@ -1,0 +1,18 @@
+
+=== running test tests_allen.py ===
+
+Starting to run 42 tests
+111111111111111110111111111111111111111111
+Testing finished in 108.989 seconds
+Tests run: 42
+OK tests: 41
+Failed tests: 1
+
+Tests which failed:
+Input: Arthur is a bird. Arthur is not wounded. Bill is an ostrich. Colin is a bird. Colin is wounded. Dave is not an ostrich.
+      Dave is wounded. If someone is an ostrich then they are a bird. If someone is an ostrich then they are abnormal.
+      If someone is an ostrich then they cannot fly. If someone is a bird and wounded then they are abnormal.
+      If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly.
+      Arthur can fly?
+Expected: True
+Received: Unknown.

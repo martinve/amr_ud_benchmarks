@@ -1,0 +1,865 @@
+# ::id 0
+# ::snt There is no boy playing outdoors and there is no man smiling .
+(a / and
+      :op1 (p / play-01
+            :polarity -
+            :ARG0 (b / boy)
+            :location (o / outdoors))
+      :op2 (s / smile-01
+            :polarity -
+            :ARG0 (m / man)))
+
+# ::id 1
+# ::snt A skilled person is riding a bicycle on one wheel .
+(r / ride-01
+      :ARG0 (p / person
+            :ARG1-of (s / skill-01))
+      :ARG1 (b / bicycle)
+      :instrument (w / wheel
+            :quant 1))
+
+# ::id 2
+# ::snt Four girls are doing backbends and playing outdoors .
+(a / and
+      :op1 (b / backbend-01
+            :ARG0 (g / girl
+                  :quant 4))
+      :op2 (p / play-01
+            :ARG0 g
+            :location (o / outdoors)))
+
+# ::id 3
+# ::snt Two teams are competing in a football match .
+(c / compete-01
+      :ARG0 (t / team
+            :quant 2)
+      :ARG2 (m / match-03
+            :mod (f / football)))
+
+# ::id 4
+# ::snt Five children are standing in a wooden hut .
+(s / stand-01
+      :ARG1 (c / child
+            :quant 5)
+      :location (h / hut
+            :mod (w / wood)))
+
+# ::id 5
+# ::snt A large group of Asian people is eating at a restaurant .
+(e / eat-01
+      :ARG0 (g / group
+            :mod (l / large)
+            :consist-of (p / person
+                  :mod (c / continent
+                        :name (n / name
+                              :op1 "Asia"))))
+      :location (r / restaurant))
+
+# ::id 6
+# ::snt A motorcycle is riding standing up on the seat of the vehicle .
+(r / ride-01
+      :ARG0 (m / motorcycle)
+      :manner (s / stand-01
+            :ARG1 m
+            :ARG2 (s2 / seat
+                  :part-of (v / vehicle))
+            :direction (u / up)))
+
+# ::id 7
+# ::snt Two dogs are playing by a plant .
+(p / play-01
+      :ARG0 (d / dog
+            :quant 2)
+      :location (b / by
+            :op1 (p2 / plant)))
+
+# ::id 8
+# ::snt A girl is wearing white clothes and is dancing .
+(a / and
+      :op1 (w / wear-01
+            :ARG0 (g / girl)
+            :ARG1 (c / clothes
+                  :ARG1-of (w2 / white-02)))
+      :op2 (d / dance-01
+            :ARG0 g))
+
+# ::id 9
+# ::snt A girl in white is dancing .
+(d / dance-01
+      :ARG0 (g / girl
+            :ARG1-of (w / white-02)))
+
+# ::id 10
+# ::snt A girl in white is dancing .
+(d / dance-01
+      :ARG0 (g / girl
+            :ARG1-of (w / white-02)))
+
+# ::id 11
+# ::snt The blond girl is dancing in front of the sound equipment .
+(d / dance-01
+      :ARG0 (g / girl
+            :mod (b / blonde))
+      :location (ii / in-front-of
+            :op1 (e / equipment
+                  :mod (s / sound))))
+
+# ::id 12
+# ::snt An Asian man is dancing and three kids are looking .
+(a / and
+      :op1 (d / dance-01
+            :ARG0 (m / man
+                  :mod (c / continent
+                        :name (n / name
+                              :op1 "Asia"))))
+      :op2 (l / look-01
+            :ARG0 (k / kid
+                  :quant 3)))
+
+# ::id 13
+# ::snt A hiker is on top of the mountain and is dancing .
+(a / and
+      :op1 (b / be-located-at-91
+            :ARG1 (p / person
+                  :ARG0-of (h / hike-01))
+            :ARG2 (t / top
+                  :part-of (m / mountain)))
+      :op2 (d / dance-01
+            :ARG0 p))
+
+# ::id 14
+# ::snt The boy is wading through the blue ocean .
+(w / wade-01
+      :ARG0 (b / boy)
+      :path (o / ocean
+            :ARG1-of (b2 / blue-02)))
+
+# ::id 15
+# ::snt A person has blonde and flyaway hair and is playing a guitar .
+(a / and
+      :op1 (h / have-03
+            :ARG0 (p / person)
+            :ARG1 (a2 / and
+                  :op1 (h2 / hair
+                        :ARG1-of (b / blonde-02))
+                  :op2 (h3 / hair
+                        :ARG1-of (f / fly-01
+                              :direction (a3 / away)))))
+      :op2 (p2 / play-01
+            :ARG0 p
+            :ARG1 (g / guitar)))
+
+# ::id 16
+# ::snt A young, topless woman is covered in paint .
+(c / cover-01
+      :ARG1 (w / woman
+            :mod (y / young)
+            :ARG1-of (t / top-01
+                  :polarity -))
+      :ARG2 (p / paint))
+
+# ::id 17
+# ::snt A crowd of people is near the water .
+(n / near-02
+      :ARG1 (c / crowd
+            :consist-of (p / person))
+      :ARG2 (w / water))
+
+# ::id 18
+# ::snt A brown and white dog is moving through the wild grass .
+(m / move-01
+      :ARG1 (d / dog
+            :ARG1-of (b / brown-02)
+            :ARG1-of (w / white-02))
+      :ARG2 (t / through
+            :op1 (g / grass
+                  :mod (w2 / wild))))
+
+# ::id 19
+# ::snt A white and tan dog is running through a field .
+(r / run-02
+      :ARG0 (d / dog
+            :ARG1-of (w / white-02)
+            :ARG1-of (t / tan-01))
+      :path (f / field))
+
+# ::id 20
+# ::snt A man is standing near a bike and is writing on a piece paper .
+(a / and
+      :op1 (s / stand-01
+            :ARG1 (m / man)
+            :ARG2 (n / near-02
+                  :ARG1 m
+                  :ARG2 (b / bike)))
+      :op2 (w / write-01
+            :ARG0 m
+            :medium (p / paper
+                  :mod (p2 / piece))))
+
+# ::id 21
+# ::snt A group of explorers are walking through the grass .
+(w / walk-01
+      :ARG0 (g / group
+            :consist-of (p / person
+                  :ARG0-of (e / explore-01)))
+      :path (g2 / grass))
+
+# ::id 22
+# ::snt Two men with cars are on the side of a snowy road .
+(b / be-located-at-91
+      :ARG1 (m / man
+            :quant 2
+            :ARG0-of (h / have-03
+                  :ARG1 (c / car)))
+      :ARG2 (s / side
+            :part-of (r / road
+                  :ARG1-of (s2 / snow-01))))
+
+# ::id 23
+# ::snt A blond girl is looking at the waves .
+(l / look-01
+      :ARG0 (g / girl
+            :mod (b / blond))
+      :ARG1 (w / wave))
+
+# ::id 24
+# ::snt Pink bellbottoms and a pink scarf aren't to be worn by women with silver pants or bike riding people .
+(r / recommend-01
+      :polarity -
+      :ARG1 (w / wear-01
+            :ARG0 (o / or
+                  :op1 (w2 / woman
+                        :ARG0-of (h / have-03
+                              :ARG1 (p / pants
+                                    :mod (s / silver))))
+                  :op2 (p2 / person
+                        :ARG0-of (r2 / ride-01
+                              :ARG1 (b / bike))))
+            :ARG1 (a / and
+                  :op1 (b2 / bellbottom
+                        :mod (p3 / pink))
+                  :op2 (s2 / scarf
+                        :mod (p4 / pink)))))
+
+# ::id 25
+# ::snt A pedestrian woman is building pink bicycles for boa wearing riders .
+(b / build-01
+      :ARG0 (w / woman
+            :mod (p / pedestrian))
+      :ARG1 (b2 / bicycle
+            :mod (p2 / pink))
+      :ARG2 (p3 / person
+            :ARG0-of (r / ride-01)
+            :ARG0-of (w2 / wear-01
+                  :ARG1 (b3 / boa))))
+
+# ::id 26
+# ::snt A biker wearing black is breaking the gears .
+(b / break-18
+      :ARG0 (p / person
+            :ARG0-of (b2 / bike-01)
+            :ARG0-of (w / wear-01
+                  :ARG1 (t / thing
+                        :ARG1-of (b3 / black-04))))
+      :ARG1 (g / gear))
+
+# ::id 27
+# ::snt A woman is putting on a cloak, which is very large, and concealing an extravagant dress .
+(a / and
+      :op1 (p / put-on-08
+            :ARG0 (w / woman)
+            :ARG1 (c / cloak
+                  :mod (l / large
+                        :degree (v / very))))
+      :op2 (c2 / conceal-01
+            :ARG0 w
+            :ARG1 (d / dress
+                  :mod (e / extravagant))))
+
+# ::id 28
+# ::snt A little boy, who looks fearful, is on a climbing wall.
+(b / be-located-at-91
+      :ARG1 (b2 / boy
+            :mod (l / little)
+            :ARG0-of (l2 / look-02
+                  :ARG1 (f / fear-01)))
+      :ARG2 (w / wall
+            :ARG0-of (c / climb-01)))
+
+# ::id 29
+# ::snt The man is tossing a kid into the swimming pool that is near the ocean .
+(t / toss-01
+      :ARG0 (m / man)
+      :ARG1 (k / kid)
+      :ARG2 (p / pool
+            :mod (s / swim-01)
+            :ARG1-of (n / near-02
+                  :ARG2 (o / ocean))))
+
+# ::id 30
+# ::snt A person with pink climbing gear roped the rock .
+(r / rope-01
+      :ARG0 (p / person
+            :ARG0-of (h / have-03
+                  :ARG1 (g / gear
+                        :purpose (c / climb-01)
+                        :mod (p2 / pink))))
+      :ARG1 (r2 / rock))
+
+# ::id 31
+# ::snt One man is climbing a cliff with a rope .
+(c / climb-01
+      :ARG0 (m / man
+            :quant 1)
+      :ARG1 (c2 / cliff)
+      :instrument (r / rope))
+
+# ::id 32
+# ::snt Two dogs of different breeds are looking at each other across a street .
+(l / look-01
+      :ARG0 (d / dog
+            :quant 2
+            :mod (b / breed
+                  :ARG1-of (d2 / differ-02)))
+      :ARG1 d
+      :location (a / across
+            :op1 (s / street)))
+
+# ::id 33
+# ::snt A few men in a competition are running indoors .
+(r / run-02
+      :ARG0 (m / man
+            :quant (f / few)
+            :ARG0-of (c / compete-01))
+      :location (ii / indoors))
+
+# ::id 34
+# ::snt A few men are running competitions outside .
+(r / run-01
+      :ARG0 (m / man
+            :quant (f / few))
+      :ARG1 (c / compete-01)
+      :location (o / outside))
+
+# ::id 35
+# ::snt A boy on a hill covered in snow is wearing a red jacket and a black hat and is sliding on his knees .
+(a / and
+      :op1 (w / wear-01
+            :ARG0 (b / boy
+                  :location (h / hill
+                        :ARG1-of (c / cover-01
+                              :ARG2 (s / snow))))
+            :ARG1 (a2 / and
+                  :op1 (j / jacket
+                        :ARG1-of (r / red-02))
+                  :op2 (h2 / hat
+                        :ARG1-of (b2 / black-05))))
+      :op2 (s2 / slide-01
+            :ARG1 b
+            :ARG2 (k / knee)))
+
+# ::id 36
+# ::snt A woman and a dog are sitting on a tree stump .
+(s / sit-01
+      :ARG1 (a / and
+            :op1 (w / woman)
+            :op2 (d / dog))
+      :ARG2 (s2 / stump
+            :part-of (t / tree)))
+
+# ::id 37
+# ::snt A group of people is equipped with gear used for protection .
+(e / equip-01
+      :ARG1 (g / group
+            :consist-of (p / person))
+      :ARG2 (g2 / gear
+            :ARG1-of (u / use-01
+                  :ARG2 (p2 / protect-01))))
+
+# ::id 38
+# ::snt A dog, which has a black coat, and a white dog are running on the grass .
+(r / run-02
+      :ARG0 (a / and
+            :op1 (d / dog
+                  :ARG0-of (h / have-03
+                        :ARG1 (c / coat
+                              :ARG1-of (b / black-04))))
+            :op2 (d2 / dog
+                  :ARG1-of (w / white-02)))
+      :location (g / grass))
+
+# ::id 39
+# ::snt An ice skating rink placed outdoors is full of people .
+(f / full-09
+      :ARG1 (r / rink
+            :mod (s / skate-01
+                  :ARG1 (ii / ice))
+            :ARG1-of (p / place-01
+                  :location (o / outdoors)))
+      :ARG2 (p2 / person))
+
+# ::id 40
+# ::snt The girl is cheering the man in the blue and white uniform .
+(c / cheer-02
+      :ARG0 (g / girl)
+      :ARG1 (m / man
+            :ARG0-of (w / wear-01
+                  :ARG1 (u / uniform
+                        :ARG1-of (b / blue-02)
+                        :ARG1-of (w2 / white-02)))))
+
+# ::id 41
+# ::snt There is no woman being kissed by a man .
+(k / kiss-01
+      :polarity -
+      :ARG0 (m / man)
+      :ARG1 (w / woman))
+
+# ::id 42
+# ::snt The young girl is blowing a bubble that is huge .
+(b / blow-01
+      :ARG0 (g / girl
+            :mod (y / young))
+      :ARG1 (b2 / bubble
+            :mod (h / huge)))
+
+# ::id 43
+# ::snt Two toddlers are eating corndogs in a wagon, which is really small .
+(e / eat-01
+      :ARG0 (t / toddler
+            :quant 2)
+      :ARG1 (c / corndog)
+      :location (w / wagon
+            :mod (s / small
+                  :degree (r / really))))
+
+# ::id 44
+# ::snt A horse is tossing the cowboy wearing pants of blue and red color .
+(t / toss-01
+      :ARG0 (h / horse)
+      :ARG1 (c / cowboy
+            :ARG0-of (w / wear-01
+                  :ARG1 (p / pants
+                        :ARG1-of (c2 / color-01
+                              :ARG2 (a / and
+                                    :op1 (b / blue)
+                                    :op2 (r / red-02)))))))
+
+# ::id 45
+# ::snt There is no adult in the amphitheater talking to a boy .
+(a / adult
+      :polarity -
+      :ARG0-of (t / talk-01
+            :ARG2 (b / boy))
+      :location (a2 / amphitheater))
+
+# ::id 46
+# ::snt An adult is in the amphitheater and is talking to a boy .
+(a / and
+      :op1 (b / be-located-at-91
+            :ARG1 (a2 / adult)
+            :ARG2 (a3 / amphitheater))
+      :op2 (t / talk-01
+            :ARG0 a2
+            :ARG2 (b2 / boy)))
+
+# ::id 47
+# ::snt A person who is practicing snowboarding jumps into the air .
+(j / jump-03
+      :ARG0 (p / person
+            :ARG0-of (p2 / practice-01
+                  :ARG1 (s / snowboard-01)))
+      :ARG2 (a / air))
+
+# ::id 48
+# ::snt A man is opening a small package that contains headphones .
+(o / open-01
+      :ARG0 (m / man)
+      :ARG1 (p / package
+            :mod (s / small)
+            :ARG0-of (c / contain-01
+                  :ARG1 (h / headphone))))
+
+# ::id 49
+# ::snt The turtle is following the fish .
+(f / follow-02
+      :ARG0 (t / turtle)
+      :ARG1 (f2 / fish))
+
+# ::id 50
+# ::snt A woman is slicing a carrot .
+(s / slice-01
+      :ARG0 (w / woman)
+      :ARG1 (c / carrot))
+
+# ::id 51
+# ::snt A woman is arranging her hair .
+(a / arrange-01
+      :ARG0 (w / woman
+            :part (h / hair))
+      :ARG1 h)
+
+# ::id 52
+# ::snt There is no woman combing her hair .
+(w / woman
+      :polarity -
+      :ARG0-of (c / combing-01
+            :ARG1 (h / hair
+                  :poss w)))
+
+# ::id 53
+# ::snt A man and a woman are walking together through the woods .
+(w / walk-01
+      :ARG0 (a / and
+            :op1 (m / man)
+            :op2 (w2 / woman))
+      :ARG1 (w3 / woods)
+      :manner (t / together))
+
+# ::id 54
+# ::snt A man and a woman are walking through a wooded area .
+(w / walk-01
+      :ARG0 (a / and
+            :op1 (m / man)
+            :op2 (w2 / woman))
+      :path (a2 / area
+            :ARG1-of (w3 / wooded-02)))
+
+# ::id 55
+# ::snt A man is slicing a tomato .
+(s / slice-01
+      :ARG0 (m / man)
+      :ARG1 (t / tomato))
+
+# ::id 56
+# ::snt A woman is dancing and singing with other women .
+(a / and
+      :op1 (d / dance-01
+            :ARG0 (w / woman))
+      :op2 (s / sing-01
+            :ARG0 w)
+      :accompanier (w2 / woman
+            :mod (o / other)))
+
+# ::id 57
+# ::snt A woman is dancing and singing in the rain .
+(a / and
+      :op1 (d / dance-01
+            :ARG0 (w / woman))
+      :op2 (s / sing-01
+            :ARG0 w)
+      :time (r / rain-01))
+
+# ::id 58
+# ::snt A woman is dancing and singing in the rain .
+(a / and
+      :op1 (d / dance-01
+            :ARG0 (w / woman))
+      :op2 (s / sing-01
+            :ARG0 w)
+      :time (r / rain-01))
+
+# ::id 59
+# ::snt A band is playing onstage .
+(p / play-01
+      :ARG0 (b / band)
+      :location (o / onstage))
+
+# ::id 60
+# ::snt A man is playing a game with a ball .
+(p / play-01
+      :ARG0 (m / man)
+      :ARG1 (g / game)
+      :instrument (b / ball))
+
+# ::id 61
+# ::snt A woman is being measured by another woman .
+(m / measure-01
+      :ARG0 (w / woman
+            :mod (a / another))
+      :ARG1 (w2 / woman))
+
+# ::id 62
+# ::snt A person is chopping an onion .
+(c / chop-01
+      :ARG0 (p / person)
+      :ARG1 (o / onion))
+
+# ::id 63
+# ::snt A man is scared .
+(s / scare-01
+      :ARG1 (m / man))
+
+# ::id 64
+# ::snt A man is screaming .
+(s / scream-01
+      :ARG0 (m / man))
+
+# ::id 65
+# ::snt A man is chopping butter into a small container .
+(c / chop-01
+      :ARG0 (m / man)
+      :ARG1 (b / butter)
+      :ARG2 (c2 / container
+            :mod (s / small)))
+
+# ::id 66
+# ::snt Men are cutting wood .
+(c / cut-01
+      :ARG0 (m / man)
+      :ARG1 (w / wood))
+
+# ::id 67
+# ::snt A man is spitting .
+(s / spit-01
+      :ARG0 (m / man))
+
+# ::id 68
+# ::snt There is no man running, jumping and kicking near a vending machine .
+(m / man
+      :polarity -
+      :ARG0-of (r / run-02)
+      :ARG0-of (j / jump-02)
+      :ARG0-of (k / kick-01)
+      :ARG1-of (n / near-02
+            :ARG2 (m2 / machine
+                  :ARG0-of (v / vend-01))))
+
+# ::id 69
+# ::snt Three young men are furiously running, jumping and kicking near a vending machine .
+(a / and
+      :op1 (r / run-02
+            :ARG0 (m / man
+                  :quant 3
+                  :mod (y / young)))
+      :op2 (j / jump-01
+            :ARG0 m)
+      :op3 (k / kick-01
+            :ARG0 m)
+      :manner (f / furious)
+      :location (n / near-02
+            :ARG1 m
+            :ARG2 (m2 / machine
+                  :ARG0-of (v / vend-01))))
+
+# ::id 70
+# ::snt The man is stirring the sauce for the chicken .
+(s / stir-01
+      :ARG0 (m / man)
+      :ARG1 (s2 / sauce)
+      :purpose (c / chicken))
+
+# ::id 71
+# ::snt A man is playing guitar .
+(p / play-01
+      :ARG0 (m / man)
+      :ARG1 (g / guitar))
+
+# ::id 72
+# ::snt A man is strumming a guitar .
+(s / strumming-02
+      :ARG0 (m / man)
+      :ARG1 (g / guitar))
+
+# ::id 73
+# ::snt Three boys in karate costumes are fighting .
+(f / fight-01
+      :ARG0 (b / boy
+            :quant 3
+            :ARG0-of (w / wear-01
+                  :ARG1 (c / costume
+                        :mod (k / karate)))))
+
+# ::id 74
+# ::snt Three boys in karate costumes are fighting .
+(f / fight-01
+      :ARG0 (b / boy
+            :quant 3
+            :ARG0-of (w / wear-01
+                  :ARG1 (c / costume
+                        :mod (k / karate)))))
+
+# ::id 75
+# ::snt A woman is cutting broccoli .
+(c / cut-02
+      :ARG0 (w / woman)
+      :ARG1 (b / broccoli))
+
+# ::id 76
+# ::snt A badger is shrewdly digging the earth .
+(d / dig-01
+      :ARG0 (b / badger)
+      :ARG1 (e / earth)
+      :manner (s / shrewd))
+
+# ::id 77
+# ::snt No snake is being fed a mouse by a man .
+(f / feed-01
+      :polarity -
+      :ARG0 (m / man)
+      :ARG1 (s / snake)
+      :ARG2 (m2 / mouse))
+
+# ::id 78
+# ::snt Some ingredients are being separated in a bowl by a person .
+(s / separate-01
+      :ARG0 (p / person)
+      :ARG1 (ii / ingredient
+            :quant (s2 / some))
+      :location (b / bowl))
+
+# ::id 79
+# ::snt The guitar is being played by the man .
+(p / play-01
+      :ARG0 (m / man)
+      :ARG1 (g / guitar))
+
+# ::id 80
+# ::snt The cat is drinking some milk .
+(d / drink-01
+      :ARG0 (c / cat)
+      :ARG1 (m / milk
+            :quant (s / some)))
+
+# ::id 81
+# ::snt A man is emptying a container made of plastic .
+(e / empty-01
+      :ARG0 (m / man)
+      :ARG1 (c / container
+            :ARG1-of (m2 / make-01
+                  :ARG2 (p / plastic))))
+
+# ::id 82
+# ::snt A man is carelessly holding a frog .
+(h / hold-01
+      :ARG0 (m / man)
+      :ARG1 (f / frog)
+      :manner (c / care-04
+            :polarity -))
+
+# ::id 83
+# ::snt A flute is being played by a girl .
+(p / play-01
+      :ARG0 (g / girl)
+      :ARG1 (f / flute))
+
+# ::id 84
+# ::snt A flute is being played by a man .
+(p / play-01
+      :ARG0 (m / man)
+      :ARG1 (f / flute))
+
+# ::id 85
+# ::snt A flute isn't being played by a man .
+(p / play-01
+      :polarity -
+      :ARG0 (m / man)
+      :ARG1 (f / flute))
+
+# ::id 86
+# ::snt The girl, who is little, is combing her hair into a pony tail.
+(c / combing-01
+      :ARG0 (g / girl
+            :part (h / hair)
+            :mod (l / little))
+      :ARG1 h
+      :ARG2 (t / tail
+            :mod (p / pony)))
+
+# ::id 87
+# ::snt The girl, who is little, is ruffling her hair .
+(r / ruffle-01
+      :ARG0 (g / girl
+            :part (h / hair)
+            :mod (l / little))
+      :ARG1 h)
+
+# ::id 88
+# ::snt The parrot is talking into the microphone .
+(t / talk-01
+      :ARG0 (p / parrot)
+      :ARG2 (m / microphone))
+
+# ::id 89
+# ::snt The food on the trays is being eaten by the kittens .
+(e / eat-01
+      :ARG0 (k / kitten)
+      :ARG1 (f / food
+            :location (t / tray)))
+
+# ::id 90
+# ::snt A few kittens are eating .
+(e / eat-01
+      :ARG0 (k / kitten
+            :quant (f / few)))
+
+# ::id 91
+# ::snt A person is playing a guitar and singing .
+(a / and
+      :op1 (p / play-01
+            :ARG0 (p2 / person)
+            :ARG1 (g / guitar))
+      :op2 (s / sing-01
+            :ARG0 p2))
+
+# ::id 92
+# ::snt A man is riding the horse .
+(r / ride-01
+      :ARG0 (m / man)
+      :ARG1 (h / horse))
+
+# ::id 93
+# ::snt Some dangerous men with knives are throwing a bike against a tree .
+(t / throw-01
+      :ARG0 (m / man
+            :ARG0-of (e / endanger-01)
+            :quant (s / some)
+            :ARG0-of (h / have-03
+                  :ARG1 (k / knife)))
+      :ARG1 (b / bike)
+      :ARG2 (a / against
+            :op1 (t2 / tree)))
+
+# ::id 94
+# ::snt Some meat is being cut into pieces by a woman .
+(c / cut-02
+      :ARG0 (w / woman)
+      :ARG1 (m / meat
+            :quant (s / some))
+      :ARG2 (p / piece))
+
+# ::id 95
+# ::snt The man is granting an interview .
+(g / grant-01
+      :ARG0 (m / man)
+      :ARG1 (ii / interview-01
+            :ARG0 m))
+
+# ::id 96
+# ::snt A man's white car is being driven away .
+(d / drive-01
+      :ARG1 (c / car
+            :ARG1-of (w / white-02)
+            :poss (m / man))
+      :direction (a / away))
+
+# ::id 97
+# ::snt A small boy is playing with a dog .
+(p / play-01
+      :ARG0 (b / boy
+            :mod (s / small))
+      :accompanier (d / dog))
+
+# ::id 98
+# ::snt A man is taking pictures of a lake .
+(p / photograph-01
+      :ARG0 (m / man)
+      :ARG1 (l / lake))
+
+# ::id 99
+# ::snt A woman is using a machine made for sewing .
+(u / use-01
+      :ARG0 (w / woman)
+      :ARG1 (m / machine
+            :ARG1-of (m2 / make-01
+                  :purpose (s / sew-01))))

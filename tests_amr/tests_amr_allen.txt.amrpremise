@@ -1,0 +1,1622 @@
+# ::id 0
+# ::snt Metals conduct electricity. Insulators do not conduct electricity. If something is made of iron then it is metal. Nails are made of iron.
+(m / multi-sentence
+      :snt1 (c / conduct-01
+            :ARG0 (m2 / metal)
+            :ARG1 (e / electricity))
+      :snt2 (c2 / conduct-01
+            :polarity -
+            :ARG0 (t / thing
+                  :ARG0-of (ii / insure-02))
+            :ARG1 (e2 / electricity))
+      :snt3 (m3 / metal
+            :domain (s / something)
+            :condition (m4 / make-01
+                  :ARG1 s
+                  :ARG2 (ii2 / iron)))
+      :snt4 (m5 / make-01
+            :ARG1 (n / nail)
+            :ARG2 (ii3 / iron)))
+
+# ::id 1
+# ::snt Metals conduct electricity. Insulators do not conduct electricity. If something is made of iron then it is metal. Nails are made of plastic. Plastic is an insulator.
+(m / multi-sentence
+      :snt1 (c / conduct-01
+            :ARG0 (m2 / metal)
+            :ARG1 (e / electricity))
+      :snt2 (c2 / conduct-01
+            :polarity -
+            :ARG0 (t / thing
+                  :ARG0-of (ii / insulate-01))
+            :ARG1 (e2 / electricity))
+      :snt3 (m3 / metal
+            :domain (s / something)
+            :condition (m4 / make-01
+                  :ARG1 s
+                  :ARG2 (ii2 / iron)))
+      :snt4 (m5 / make-01
+            :ARG1 (n / nail)
+            :ARG2 (p / plastic))
+      :snt5 (ii3 / insulate-01
+            :ARG0 p))
+
+# ::id 2
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 3
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 4
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 5
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 6
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 7
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle. Muggles are persons.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (p6 / person)
+                  :condition (p7 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p8 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (a / and
+            :op1 (p9 / person
+                  :name (n2 / name
+                        :op1 "Mr"
+                        :op2 "Dursley"))
+            :op2 (p10 / person
+                  :domain (m6 / muggle))))
+
+# ::id 8
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Harry can vanish.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (m3 / muggle)
+                  :ARG1 (m4 / magic)))
+      :snt3 (p4 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (p5 / person)
+                  :condition p4
+                  :polarity -
+                  :ARG1 (d3 / do-02
+                        :ARG0 (p6 / person)
+                        :ARG1 (m5 / magic))))
+      :snt4 (p7 / possible-01
+            :ARG1 (v2 / vanish-01
+                  :ARG1 (p8 / person
+                        :name n
+                        :op1 "Harry"))))
+
+# ::id 9
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 10
+# ::snt Harry can do magic. Muggles cannot do magic. If a person can do magic then they can vanish. If a person cannot do magic then they cannot vanish. Mr Dursley is a Muggle.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (d / do-02
+                  :ARG0 (p2 / person
+                        :name (n / name
+                              :op1 "Harry"))
+                  :ARG1 (m2 / magic)))
+      :snt2 (p3 / possible-01
+            :polarity -
+            :ARG1 (d2 / do-02
+                  :ARG0 (p4 / person
+                        :mod (m3 / muggle))
+                  :ARG1 (m4 / magic)))
+      :snt3 (p5 / possible-01
+            :ARG1 (v / vanish-01
+                  :ARG1 (t / they)
+                  :condition (p6 / possible-01
+                        :polarity -
+                        :ARG1 (d3 / do-02
+                              :ARG0 (p7 / person)
+                              :ARG1 (m5 / magic)))))
+      :snt4 (p8 / person
+            :name (n2 / name
+                  :op1 "Mr"
+                  :op2 "Dursley")
+            :mod (m6 / muggle)))
+
+# ::id 11
+# ::snt If someone is not a UK resident and they do not have a UK civil service pension then they do not pay UK pension tax. If someone has a UK civil service pension then they pay pension tax in the UK. If someone is a UK resident then they pay pension tax in the UK. If someone's home country is UK then they are a UK resident. If someone's home country is France then they are a French resident. John's home country is UK. Pierre's home country is France. Alan's home country is France. Alan has a UK civil service pension.
+(m / multi-sentence
+      :snt1 (p / pay-01
+            :polarity -
+            :ARG0 (s / someone)
+            :ARG1 (t / tax-01
+                  :ARG3 (p2 / pension)
+                  :location (c / country
+                        :name (n / name
+                              :op1 "UK")))
+            :condition (a / and
+                  :op1 (p3 / person
+                        :polarity -
+                        :ARG0-of (r / reside-01
+                              :ARG1 (c2 / country
+                                    :name (n2 / name
+                                          :op1 "UK"))))
+                  :op2 (h / have-03
+                        :polarity -
+                        :ARG0 s
+                        :ARG1 (p4 / pension
+                              :mod (s2 / service
+                                    :mod (c3 / civil)
+                                    :mod c)))))
+      :snt2 (p5 / pay-01
+            :ARG0 (s3 / someone)
+            :ARG1 (t2 / tax-01
+                  :ARG3 (p6 / pension)
+                  :location c2)
+            :condition (h2 / have-03
+                  :ARG0 s3
+                  :ARG1 p6))
+      :snt3 (p7 / person
+            :ARG0-of (r2 / reside-01
+                  :ARG1 (c4 / country
+                        :name (n3 / name
+                              :op1 "France")))
+            :ARG0-of (r3 / reside-01
+                  :ARG1 (c5 / country
+                        :poss (p8 / person
+                              :name (n4 / name
+                                    :op1 "John"))))))
+
+# ::id 12
+# ::snt If someone is not a UK resident and they do not have a UK civil service pension then they do not pay UK pension tax. If someone has a UK civil service pension then they pay pension tax in the UK. If someone is a UK resident then they pay pension tax in the UK. If someone's home country is UK then they are a UK resident. If someone's home country is France then they are a French resident. John's home country is UK. Pierre's home country is France. Alan's home country is France. Alan has a UK civil service pension.
+(m / multi-sentence
+      :snt1 (p / pay-01
+            :polarity -
+            :ARG0 (s / someone)
+            :ARG1 (t / tax-01
+                  :ARG3 (p2 / pension)
+                  :location (c / country
+                        :name (n / name
+                              :op1 "UK")))
+            :condition (a / and
+                  :op1 (p3 / person
+                        :polarity -
+                        :ARG0-of (r / reside-01
+                              :ARG1 (c2 / country
+                                    :name (n2 / name
+                                          :op1 "UK"))))
+                  :op2 (h / have-03
+                        :polarity -
+                        :ARG0 s
+                        :ARG1 (p4 / pension
+                              :mod (s2 / service
+                                    :mod (c3 / civil)
+                                    :mod c)))))
+      :snt2 (p5 / pay-01
+            :ARG0 (s3 / someone)
+            :ARG1 (t2 / tax-01
+                  :ARG3 (p6 / pension)
+                  :location c2)
+            :condition (h2 / have-03
+                  :ARG0 s3
+                  :ARG1 p6))
+      :snt3 (p7 / person
+            :ARG0-of (r2 / reside-01
+                  :ARG1 (c4 / country
+                        :name (n3 / name
+                              :op1 "France")))
+            :ARG0-of (r3 / reside-01
+                  :ARG1 (c5 / country
+                        :poss (p8 / person
+                              :name (n4 / name
+                                    :op1 "John"))))))
+
+# ::id 13
+# ::snt If someone is not a UK resident and they do not have a UK civil service pension then they do not pay UK pension tax. If someone has a UK civil service pension then they pay pension tax in the UK. If someone is a UK resident then they pay pension tax in the UK. If someone's home country is UK then they are a UK resident. If someone's home country is France then they are a French resident. John's home country is UK. Pierre's home country is France. Alan's home country is France. Alan has a UK civil service pension.
+(m / multi-sentence
+      :snt1 (p / pay-01
+            :polarity -
+            :ARG0 (s / someone)
+            :ARG1 (t / tax-01
+                  :ARG3 (p2 / pension)
+                  :location (c / country
+                        :name (n / name
+                              :op1 "UK")))
+            :condition (a / and
+                  :op1 (p3 / person
+                        :polarity -
+                        :ARG0-of (r / reside-01
+                              :ARG1 (c2 / country
+                                    :name (n2 / name
+                                          :op1 "UK"))))
+                  :op2 (h / have-03
+                        :polarity -
+                        :ARG0 s
+                        :ARG1 (p4 / pension
+                              :mod (s2 / service
+                                    :mod (c3 / civil)
+                                    :mod c)))))
+      :snt2 (p5 / pay-01
+            :ARG0 (s3 / someone)
+            :ARG1 (t2 / tax-01
+                  :ARG3 (p6 / pension)
+                  :location c2)
+            :condition (h2 / have-03
+                  :ARG0 s3
+                  :ARG1 p6))
+      :snt3 (p7 / person
+            :ARG0-of (r2 / reside-01
+                  :ARG1 (c4 / country
+                        :name (n3 / name
+                              :op1 "France")))
+            :ARG0-of (r3 / reside-01
+                  :ARG1 (c5 / country
+                        :poss (p8 / person
+                              :name (n4 / name
+                                    :op1 "John"))))))
+
+# ::id 14
+# ::snt If someone is not a UK resident and they do not have a UK civil service pension then they do not pay UK pension tax. If someone has a UK civil service pension then they pay pension tax in the UK. If someone is a UK resident then they pay pension tax in the UK. If someone's home country is UK then they are a UK resident. If someone's home country is France then they are a French resident. John's home country is UK. Pierre's home country is France. Alan's home country is France. Alan has a UK civil service pension.
+(m / multi-sentence
+      :snt1 (p / pay-01
+            :polarity -
+            :ARG0 (s / someone)
+            :ARG1 (t / tax-01
+                  :ARG3 (p2 / pension)
+                  :location (c / country
+                        :name (n / name
+                              :op1 "UK")))
+            :condition (a / and
+                  :op1 (p3 / person
+                        :polarity -
+                        :ARG0-of (r / reside-01
+                              :ARG1 (c2 / country
+                                    :name (n2 / name
+                                          :op1 "UK"))))
+                  :op2 (h / have-03
+                        :polarity -
+                        :ARG0 s
+                        :ARG1 (p4 / pension
+                              :mod (s2 / service
+                                    :mod (c3 / civil)
+                                    :mod c)))))
+      :snt2 (p5 / pay-01
+            :ARG0 (s3 / someone)
+            :ARG1 (t2 / tax-01
+                  :ARG3 (p6 / pension)
+                  :location c2)
+            :condition (h2 / have-03
+                  :ARG0 s3
+                  :ARG1 p6))
+      :snt3 (p7 / person
+            :ARG0-of (r2 / reside-01
+                  :ARG1 (c4 / country
+                        :name (n3 / name
+                              :op1 "France")))
+            :ARG0-of (r3 / reside-01
+                  :ARG1 (c5 / country
+                        :poss (p8 / person
+                              :name (n4 / name
+                                    :op1 "John"))))))
+
+# ::id 15
+# ::snt Arthur is a bird. Arthur is not wounded. Bill is an ostrich. Colin is a bird. Colin is wounded. Dave is not an ostrich. Dave is wounded. If someone is an ostrich then they are a bird. If someone is an ostrich then they are abnormal. If someone is an ostrich then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (o / ostrich
+                  :domain (p2 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (b2 / bird
+                  :domain (p3 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (w2 / wound-01
+                  :ARG1 p3)
+            :op6 (o2 / ostrich
+                  :polarity -
+                  :domain (p4 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op7 (w3 / wound-01
+                  :ARG1 p4))
+      :snt2 (a2 / and
+            :op1 (p5 / possible-01
+                  :polarity -
+                  :ARG1 (f / fly-01
+                        :ARG1 (s / someone)))
+            :op2 (p6 / possible-01
+                  :polarity -
+                  :ARG1 (f2 / fly-01
+                        :ARG1 (s2 / someone))
+                  :condition (a3 / and
+                        :op1 b2)
+                  :op2 w2
+                  :ARG1 s2))
+      :op3 w3
+      :ARG1 s2
+      :condition w3
+      :ARG1 s2)
+
+# ::id 16
+# ::snt Arthur is a bird. Arthur is not wounded. Bill is an ostrich. Colin is a bird. Colin is wounded. Dave is not an ostrich. Dave is wounded. If someone is an ostrich then they are a bird. If someone is an ostrich then they are abnormal. If someone is an ostrich then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (o / ostrich
+                  :domain (p2 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (b2 / bird
+                  :domain (p3 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (w2 / wound-01
+                  :ARG1 p3)
+            :op6 (o2 / ostrich
+                  :polarity -
+                  :domain (p4 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op7 (w3 / wound-01
+                  :ARG1 p4))
+      :snt2 (a2 / and
+            :op1 (p5 / possible-01
+                  :polarity -
+                  :ARG1 (f / fly-01
+                        :ARG1 (s / someone)))
+            :op2 (p6 / possible-01
+                  :polarity -
+                  :ARG1 (f2 / fly-01
+                        :ARG1 (s2 / someone))
+                  :condition (a3 / and
+                        :op1 b2)
+                  :op2 w2
+                  :ARG1 s2))
+      :op3 w3
+      :ARG1 s2
+      :condition w3
+      :ARG1 s2)
+
+# ::id 17
+# ::snt Arthur is a bird. Arthur is not wounded. Bill is an ostrich. Colin is a bird. Colin is wounded. Dave is not an ostrich. Dave is wounded. If someone is an ostrich then they are a bird. If someone is an ostrich then they are abnormal. If someone is an ostrich then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (o / ostrich
+                  :domain (p2 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (b2 / bird
+                  :domain (p3 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (w2 / wound-01
+                  :ARG1 p3)
+            :op6 (o2 / ostrich
+                  :polarity -
+                  :domain (p4 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op7 (w3 / wound-01
+                  :ARG1 p4))
+      :snt2 (a2 / and
+            :op1 (p5 / possible-01
+                  :polarity -
+                  :ARG1 (f / fly-01
+                        :ARG1 (s / someone)))
+            :op2 (p6 / possible-01
+                  :polarity -
+                  :ARG1 (f2 / fly-01
+                        :ARG1 (s2 / someone))
+                  :condition (a3 / and
+                        :op1 b2)
+                  :op2 w2
+                  :ARG1 s2))
+      :op3 w3
+      :ARG1 s2
+      :condition w3
+      :ARG1 s2)
+
+# ::id 18
+# ::snt "Arthur is a bird. Arthur is not wounded. Bill is a penguin. Colin is a bird. Colin is wounded. Dave is not a penguin. Dave is wounded. If someone is an ostrich then they are a bird. If someone is a penguin then they are abnormal. If someone is a penguin then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly. Most objects are not abnormal.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (p2 / penguin
+                  :domain (p3 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (p4 / penguin
+                  :domain (p5 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (p6 / penguin
+                  :polarity -
+                  :domain (p7 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op6 (w2 / wound-01
+                  :ARG1 p7))
+      :snt3 (b2 / bird
+            :domain (s / someone)
+            :condition (o / ostrich
+                  :domain (s2 / someone)))
+      :snt4 (p8 / possible-01
+            :polarity -
+            :ARG1 (f / fly-01
+                  :ARG1 s))
+      :snt5 (a2 / abnormal
+            :domain (t / they)
+            :condition (a3 / and
+                  :op1 (b3 / bird
+                        :domain s)
+                  :op2 w2
+                  :ARG1 s))
+      :snt6 (a4 / abnormal
+            :domain t
+            :condition (a5 / and
+                  :op1 (b4 / bird
+                        :domain s)
+                  :op2 (w3 / wound-01
+                        :ARG1 s))
+            :op3 (w4 / wound-01
+                  :ARG1 s)
+            :condition (w5 / wound-01
+                  :ARG1 s)))
+
+# ::id 19
+# ::snt "Arthur is a bird. Arthur is not wounded. Bill is a penguin. Colin is a bird. Colin is wounded. Dave is not a penguin. Dave is wounded. If someone is an ostrich then they are a bird. If someone is a penguin then they are abnormal. If someone is a penguin then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly. Most objects are not abnormal.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (p2 / penguin
+                  :domain (p3 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (p4 / penguin
+                  :domain (p5 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (p6 / penguin
+                  :polarity -
+                  :domain (p7 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op6 (w2 / wound-01
+                  :ARG1 p7))
+      :snt3 (b2 / bird
+            :domain (s / someone)
+            :condition (o / ostrich
+                  :domain (s2 / someone)))
+      :snt4 (p8 / possible-01
+            :polarity -
+            :ARG1 (f / fly-01
+                  :ARG1 s))
+      :snt5 (a2 / abnormal
+            :domain (t / they)
+            :condition (a3 / and
+                  :op1 (b3 / bird
+                        :domain s)
+                  :op2 w2
+                  :ARG1 s))
+      :snt6 (a4 / abnormal
+            :domain t
+            :condition (a5 / and
+                  :op1 (b4 / bird
+                        :domain s)
+                  :op2 (w3 / wound-01
+                        :ARG1 s))
+            :op3 (w4 / wound-01
+                  :ARG1 s)
+            :condition (w5 / wound-01
+                  :ARG1 s)))
+
+# ::id 20
+# ::snt "Arthur is a bird. Arthur is not wounded. Bill is a penguin. Colin is a bird. Colin is wounded. Dave is not a penguin. Dave is wounded. If someone is an ostrich then they are a bird. If someone is a penguin then they are abnormal. If someone is a penguin then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly. Most objects are not abnormal.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (p2 / penguin
+                  :domain (p3 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (p4 / penguin
+                  :domain (p5 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (p6 / penguin
+                  :polarity -
+                  :domain (p7 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op6 (w2 / wound-01
+                  :ARG1 p7))
+      :snt3 (b2 / bird
+            :domain (s / someone)
+            :condition (o / ostrich
+                  :domain (s2 / someone)))
+      :snt4 (p8 / possible-01
+            :polarity -
+            :ARG1 (f / fly-01
+                  :ARG1 s))
+      :snt5 (a2 / abnormal
+            :domain (t / they)
+            :condition (a3 / and
+                  :op1 (b3 / bird
+                        :domain s)
+                  :op2 w2
+                  :ARG1 s))
+      :snt6 (a4 / abnormal
+            :domain t
+            :condition (a5 / and
+                  :op1 (b4 / bird
+                        :domain s)
+                  :op2 (w3 / wound-01
+                        :ARG1 s))
+            :op3 (w4 / wound-01
+                  :ARG1 s)
+            :condition (w5 / wound-01
+                  :ARG1 s)))
+
+# ::id 21
+# ::snt "Arthur is a bird. Arthur is not wounded. Bill is a penguin. Colin is a bird. Colin is wounded. Dave is not a penguin. Dave is wounded. If someone is an ostrich then they are a bird. If someone is a penguin then they are abnormal. If someone is a penguin then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly. Most objects are not abnormal.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (p2 / penguin
+                  :domain (p3 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (p4 / penguin
+                  :domain (p5 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (p6 / penguin
+                  :polarity -
+                  :domain (p7 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op6 (w2 / wound-01
+                  :ARG1 p7))
+      :snt3 (b2 / bird
+            :domain (s / someone)
+            :condition (o / ostrich
+                  :domain (s2 / someone)))
+      :snt4 (p8 / possible-01
+            :polarity -
+            :ARG1 (f / fly-01
+                  :ARG1 s))
+      :snt5 (a2 / abnormal
+            :domain (t / they)
+            :condition (a3 / and
+                  :op1 (b3 / bird
+                        :domain s)
+                  :op2 w2
+                  :ARG1 s))
+      :snt6 (a4 / abnormal
+            :domain t
+            :condition (a5 / and
+                  :op1 (b4 / bird
+                        :domain s)
+                  :op2 (w3 / wound-01
+                        :ARG1 s))
+            :op3 (w4 / wound-01
+                  :ARG1 s)
+            :condition (w5 / wound-01
+                  :ARG1 s)))
+
+# ::id 22
+# ::snt "Arthur is a bird. Arthur is not wounded. Bill is a penguin. Colin is a bird. Colin is wounded. Dave is not a penguin. Dave is wounded. If someone is an ostrich then they are a bird. If someone is a penguin then they are abnormal. If someone is a penguin then they cannot fly. If someone is a bird and wounded then they are abnormal. If someone is wounded then they cannot fly. If someone is a bird and not abnormal then they can fly. Most objects are not abnormal.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (b / bird
+                  :domain (p / person
+                        :name (n / name
+                              :op1 "Arthur")))
+            :op2 (w / wound-01
+                  :polarity -
+                  :ARG1 p)
+            :op3 (p2 / penguin
+                  :domain (p3 / person
+                        :name (n2 / name
+                              :op1 "Bill")))
+            :op4 (p4 / penguin
+                  :domain (p5 / person
+                        :name (n3 / name
+                              :op1 "Colin")))
+            :op5 (p6 / penguin
+                  :polarity -
+                  :domain (p7 / person
+                        :name (n4 / name
+                              :op1 "Dave")))
+            :op6 (w2 / wound-01
+                  :ARG1 p7))
+      :snt3 (b2 / bird
+            :domain (s / someone)
+            :condition (o / ostrich
+                  :domain (s2 / someone)))
+      :snt4 (p8 / possible-01
+            :polarity -
+            :ARG1 (f / fly-01
+                  :ARG1 s))
+      :snt5 (a2 / abnormal
+            :domain (t / they)
+            :condition (a3 / and
+                  :op1 (b3 / bird
+                        :domain s)
+                  :op2 w2
+                  :ARG1 s))
+      :snt6 (a4 / abnormal
+            :domain t
+            :condition (a5 / and
+                  :op1 (b4 / bird
+                        :domain s)
+                  :op2 (w3 / wound-01
+                        :ARG1 s))
+            :op3 (w4 / wound-01
+                  :ARG1 s)
+            :condition (w5 / wound-01
+                  :ARG1 s)))
+
+# ::id 23
+# ::snt The circuit has a switch. The circuit has a bell. The switch is on. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / on-01
+            :ARG1 s)
+      :snt4 (c3 / complete-01
+            :ARG1 (c4 / circuit)
+            :condition (a / and
+                  :op1 (h3 / have-03
+                        :polarity -
+                        :ARG0 (c5 / circuit)
+                        :ARG1 s))
+            :op2 o
+            :ARG1 s)
+      :snt5 (c6 / complete-01
+            :ARG1 (c7 / circuit))
+      :snt6 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt7 (r / ring-01
+            :ARG1 b)
+      :condition (a2 / and
+            :op1 (c8 / complete-01
+                  :ARG1 (c9 / circuit))
+            :op2 (h4 / have-03
+                  :ARG0 (c10 / circuit)
+                  :ARG1 (r2 / radio))))
+
+# ::id 24
+# ::snt The circuit has a switch. The circuit has a bell. The switch is off. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (s2 / switch
+            :ARG1-of (o / off-01))
+      :snt4 (c3 / complete-01
+            :ARG1 (c4 / circuit)
+            :condition (a / and
+                  :op1 (s3 / switch)
+                  :op2 (s4 / switch
+                        :ARG1-of (o2 / on-01)))
+            :op2 (c5 / complete-01
+                  :polarity -
+                  :ARG1 (c6 / circuit)))
+      :snt5 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt6 (r / ring-01
+            :ARG1 b)
+      :condition (a2 / and
+            :op1 (c7 / complete-01
+                  :ARG1 (c8 / circuit))
+            :op2 (h3 / have-03
+                  :ARG0 c8
+                  :ARG1 (r2 / radio)))
+      :snt3 r
+      :ARG1 b
+      :snt4 (a3 / and
+            :op1 (c9 / complete-01
+                  :ARG1 (c10 / circuit))
+            :op2 (h4 / have-03
+                  :ARG0 (c11 / circuit)
+                  :ARG1 r2)))
+
+# ::id 25
+# ::snt The circuit does not have a switch. The circuit has a bell. The switch is off. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :polarity -
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (s2 / switch
+            :ARG1-of (o / off-01))
+      :snt4 (c3 / complete-01
+            :ARG1 (c4 / circuit)
+            :condition (a / and
+                  :op1 (s3 / switch)
+                  :op2 (s4 / switch
+                        :ARG1-of (o2 / on-01)))
+            :op3 (c5 / complete-01
+                  :polarity -
+                  :ARG1 (c6 / circuit)))
+      :snt5 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt6 (r / ring-01
+            :ARG1 b)
+      :condition (a2 / and
+            :op1 (c7 / complete-01
+                  :ARG1 (c8 / circuit))
+            :op2 (h3 / have-03
+                  :ARG0 (c9 / circuit)
+                  :ARG1 b)))
+
+# ::id 26
+# ::snt The circuit does not have a switch. The circuit has a bell. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :polarity -
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (c3 / complete-01
+            :ARG1 (c4 / circuit)
+            :condition (a / and
+                  :op1 (h3 / have-03
+                        :ARG0 (c5 / circuit)
+                        :ARG1 s))
+            :op2 (o / on-01
+                  :ARG1 s))
+      :snt4 (c6 / complete-01
+            :ARG1 (c7 / circuit))
+      :snt5 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt6 (r / ring-01
+            :ARG1 (b3 / bell)
+            :condition (a2 / and
+                  :op1 (c8 / complete-01
+                        :ARG1 (c9 / circuit))
+                  :op2 (h4 / have-03
+                        :ARG0 (c10 / circuit)
+                        :ARG1 (r2 / radio))))
+      :snt3 (a3 / and
+            :op1 (c11 / complete-01
+                  :ARG1 (c12 / circuit))
+            :op2 (h5 / have-03
+                  :ARG0 c12
+                  :ARG1 (b4 / bell))))
+
+# ::id 27
+# ::snt The circuit has a bell. The switch is on. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (b / bell))
+      :snt2 (o / on-01
+            :ARG1 (s / switch))
+      :snt3 (c2 / complete-01
+            :ARG1 (c3 / circuit)
+            :condition (a / and
+                  :op1 (h2 / have-03
+                        :ARG0 (c4 / circuit)
+                        :ARG1 (s2 / switch))
+                  :op2 (o2 / on-01
+                        :ARG1 s2)))
+      :snt4 (c5 / complete-01
+            :ARG1 (c6 / circuit)
+            :condition (h3 / have-03
+                  :polarity -
+                  :ARG0 (c7 / circuit)
+                  :ARG1 (s3 / switch)))
+      :snt5 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt6 (r / ring-01
+            :ARG1 (b3 / bell))
+      :snt7 (p / play-01
+            :ARG1 (r2 / radio)
+            :condition (a2 / and
+                  :op1 c5
+                  :ARG1 (c8 / circuit))
+            :op2 h2
+            :ARG0 c8
+            :ARG1 (r3 / radio)))
+
+# ::id 28
+# ::snt The circuit has a bell. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (b / bell))
+      :snt2 (c2 / complete-01
+            :ARG1 (c3 / circuit)
+            :condition (a / and
+                  :op1 (h2 / have-03
+                        :ARG0 (c4 / circuit)
+                        :ARG1 (s / switch))
+                  :op2 (o / on-01
+                        :ARG1 s)))
+      :snt3 (c5 / complete-01
+            :ARG1 (c6 / circuit)
+            :condition (h3 / have-03
+                  :polarity -
+                  :ARG0 (c7 / circuit)
+                  :ARG1 s))
+      :snt4 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt5 (r / ring-01
+            :ARG1 (b3 / bell))
+      :snt6 (p / play-01
+            :ARG1 (r2 / radio)
+            :condition (a2 / and
+                  :op1 c5
+                  :ARG1 (c8 / circuit))
+            :op2 h2
+            :ARG0 c8
+            :ARG1 (r3 / radio)))
+
+# ::id 29
+# ::snt The circuit has a switch. The circuit has a bell. The switch is on. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / on-01
+            :ARG1 s)
+      :snt4 (c3 / complete-01
+            :ARG1 (c4 / circuit)
+            :condition (a / and
+                  :op1 (h3 / have-03
+                        :polarity -
+                        :ARG0 (c5 / circuit)
+                        :ARG1 s))
+            :op2 o
+            :ARG1 s)
+      :snt5 (c6 / complete-01
+            :ARG1 (c7 / circuit))
+      :snt6 (g / glow-01
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt7 (r / ring-01
+            :ARG1 b)
+      :condition (a2 / and
+            :op1 (c8 / complete-01
+                  :ARG1 (c9 / circuit))
+            :op2 (h4 / have-03
+                  :ARG0 (c10 / circuit)
+                  :ARG1 (r2 / radio))))
+
+# ::id 30
+# ::snt The circuit has a switch. The circuit has a bell. The switch is on. The circuit has a light bulb. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / on-01
+            :ARG1 s)
+      :snt4 (h3 / have-03
+            :ARG0 (c3 / circuit)
+            :ARG1 (b2 / bulb
+                  :mod (l / light)))
+      :snt5 (c4 / complete-01
+            :ARG1 (c5 / circuit)
+            :condition (a / and
+                  :op1 (h4 / have-03
+                        :polarity -
+                        :ARG0 (c6 / circuit)
+                        :ARG1 s))
+            :op2 o
+            :ARG1 s)
+      :snt6 (c7 / complete-01
+            :ARG1 (c8 / circuit))
+      :snt7 (g / glow-01
+            :ARG1 b2
+            :mod l)
+      :snt8 (r / ring-01
+            :ARG1 b)
+      :condition (a2 / and
+            :op1 (c9 / complete-01
+                  :ARG1 (c10 / circuit))
+            :op2 h4
+            :ARG0 c10
+            :ARG1 b))
+
+# ::id 31
+# ::snt The circuit has a switch. The circuit has a bell. The switch is on. The circuit has a light bulb and a radio. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / on-01
+            :ARG1 s)
+      :snt4 (h3 / have-03
+            :ARG0 (c3 / circuit)
+            :ARG1 (a / and
+                  :op1 (b2 / bulb
+                        :mod (l / light))
+                  :op2 (r / radio)))
+      :snt5 (c4 / complete-01
+            :ARG1 (c5 / circuit)
+            :condition (a2 / and
+                  :op1 (h4 / have-03
+                        :polarity -
+                        :ARG0 (c6 / circuit)
+                        :ARG1 s))
+            :op2 s)
+      :snt6 (c7 / complete-01
+            :ARG1 (c8 / circuit))
+      :snt7 (g / glow-01
+            :ARG1 b2
+            :mod l)
+      :snt8 (r2 / ring-01
+            :ARG1 b)
+      :condition (a3 / and
+            :op1 (c9 / complete-01
+                  :ARG1 (c10 / circuit))
+            :op2 h4
+            :ARG0 c10
+            :ARG1 b))
+
+# ::id 32
+# ::snt The circuit has a switch. The circuit has a bell. The switch is on. The circuit has a light bulb and a radio. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / on-01
+            :ARG1 s)
+      :snt4 (h3 / have-03
+            :ARG0 (c3 / circuit)
+            :ARG1 (a / and
+                  :op1 (b2 / bulb
+                        :mod (l / light))
+                  :op2 (r / radio)))
+      :snt5 (c4 / complete-01
+            :ARG1 (c5 / circuit)
+            :condition (a2 / and
+                  :op1 (h4 / have-03
+                        :polarity -
+                        :ARG0 (c6 / circuit)
+                        :ARG1 s))
+            :op2 s)
+      :snt6 (c7 / complete-01
+            :ARG1 (c8 / circuit))
+      :snt7 (g / glow-01
+            :ARG1 b2
+            :mod l)
+      :snt8 (r2 / ring-01
+            :ARG1 b)
+      :condition (a3 / and
+            :op1 (c9 / complete-01
+                  :ARG1 (c10 / circuit))
+            :op2 h4
+            :ARG0 c10
+            :ARG1 b))
+
+# ::id 33
+# ::snt The circuit has a switch. The circuit has a bell. The switch is off. The circuit has a light bulb and a radio. If the circuit has the switch and the switch is on then the circuit is complete. If the circuit does not have the switch then the circuit is complete. If the circuit is complete and the circuit has the light bulb then the light bulb is glowing. If the circuit is complete and the circuit has the bell then the bell is ringing. If the circuit is complete and the circuit has the radio then the radio is playing.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (c / circuit)
+            :ARG1 (s / switch))
+      :snt2 (h2 / have-03
+            :ARG0 (c2 / circuit)
+            :ARG1 (b / bell))
+      :snt3 (o / off
+            :domain s)
+      :snt4 (h3 / have-03
+            :ARG0 (c3 / circuit)
+            :ARG1 (a / and
+                  :op1 (b2 / bulb
+                        :mod (l / light))
+                  :op2 (r / radio)))
+      :snt5 (c4 / complete-01
+            :ARG1 (c5 / circuit)
+            :condition (a2 / and
+                  :op1 (h4 / have-03
+                        :polarity -
+                        :ARG0 (c6 / circuit)
+                        :ARG1 s))
+            :op2 (o2 / on-01
+                  :ARG1 s))
+      :snt6 (c7 / complete-01
+            :ARG1 (c8 / circuit))
+      :snt7 (g / glow-01
+            :ARG1 b2
+            :mod l)
+      :snt8 (r2 / ring-01
+            :ARG1 b)
+      :condition (a3 / and
+            :op1 (c9 / complete-01
+                  :ARG1 (c10 / circuit))
+            :op2 h4
+            :ARG0 c10
+            :ARG1 b))
+
+# ::id 34
+# ::snt Fiona is round. All green things are rough. White things are not cold. If Fiona is rough and Fiona is furry then Fiona is not big. If Fiona is cold and Fiona is rough then Fiona is not furry. Round things are green. If something is round and furry then it is not big. All furry things are big. If something is round and not green then it is not big. Fiona is not big. Fiona is cold.
+(m / multi-sentence
+      :snt1 (r / round-03
+            :ARG1 (c / city
+                  :name (n / name
+                        :op1 "Fiona")))
+      :snt2 (r2 / rough-04
+            :ARG1 (t / thing
+                  :ARG1-of (g / green-02)
+                  :mod (a / all)))
+      :snt3 (c2 / cold-01
+            :polarity -
+            :ARG1 (t2 / thing
+                  :ARG1-of (w / white-02)))
+      :snt4 (b / big
+            :polarity -
+            :domain c
+            :name (n2 / name
+                  :op1 "Fiona"))
+      :condition (a2 / and
+            :op1 r2
+            :ARG1 c)
+      :op2 (f / furry
+            :domain c)
+      :snt5 (f2 / furry
+            :polarity -
+            :domain c
+            :name (n3 / name
+                  :op1 "Fiona"))
+      :snt6 (g2 / green-03
+            :ARG1 (t3 / thing
+                  :mod (r3 / round)))
+      :snt7 (b2 / big
+            :polarity -
+            :domain (t4 / thing
+                  :mod (r4 / round)))
+      :snt8 (b3 / big
+            :polarity -
+            :domain (s / something)
+            :condition (a3 / and
+                  :op1 (a4 / and
+                        :op1 (r5 / round)
+                        :op2 f2)))
+      :snt8 (b4 / big
+            :domain (s2 / something
+                  :mod (f3 / furry)
+                  :mod a)))
+
+# ::id 35
+# ::snt Fiona is round. All green things are rough. White things are not cold. If Fiona is rough and Fiona is furry then Fiona is not big. If Fiona is cold and Fiona is rough then Fiona is not furry. If something is round and furry then it is not big. All furry things are big. If something is round and not green then it is not big. Fiona is not big. Fiona is cold.
+(m / multi-sentence
+      :snt1 (r / round-06
+            :ARG1 (c / city
+                  :name (n / name
+                        :op1 "Fiona")))
+      :snt2 (r2 / rough-04
+            :ARG1 (t / thing
+                  :ARG1-of (g / green-02)
+                  :mod (a / all)))
+      :snt3 (c2 / cold-01
+            :polarity -
+            :ARG1 (t2 / thing
+                  :ARG1-of (w / white-02)))
+      :snt4 (b / big
+            :polarity -
+            :domain (c3 / city
+                  :name (n2 / name
+                        :op1 "Fiona"))
+            :condition (a2 / and
+                  :op1 r2
+                  :ARG1 c3)
+            :op2 (f / furry
+                  :domain c3))
+      :snt5 (f2 / furry
+            :polarity -
+            :domain c3)
+      :snt6 (b2 / big
+            :polarity -
+            :domain (c4 / city
+                  :name (n3 / name
+                        :op1 "Fiona"))
+            :condition (a3 / and
+                  :op1 (c5 / cold-01
+                        :ARG1 c4)
+                  :op2 (r3 / rough-04
+                        :ARG1 c4)))
+      :snt3 (b3 / big
+            :polarity -
+            :domain (c6 / city
+                  :name (n4 / name
+                        :op1 "Fiona")))
+      :snt4 (b4 / big
+            :domain (s / something
+                  :mod (r4 / round))
+            :domain (s2 / something
+                  :mod f2))
+      :snt5 (b5 / big
+            :polarity -
+            :domain (c7 / city
+                  :name (n5 / name
+                        :op1 "Fiona")))
+      :condition (a4 / and
+            :op1 (r5 / round)))
+
+# ::id 36
+# ::snt Fiona is round. All green things are rough. White things are not cold. If Fiona is rough and Fiona is furry then Fiona is not big. If Fiona is cold and Fiona is rough then Fiona is not furry. Round things are green. If something is round and furry then it is not big. All furry things are big. If something is round and not green then it is not big. Fiona is cold.
+(m / multi-sentence
+      :snt1 (r / round-03
+            :ARG1 (c / city
+                  :name (n / name
+                        :op1 "Fiona")))
+      :snt2 (r2 / rough-04
+            :ARG1 (t / thing
+                  :ARG1-of (g / green-02)
+                  :mod (a / all)))
+      :snt3 (c2 / cold-01
+            :polarity -
+            :ARG1 (t2 / thing
+                  :ARG1-of (w / white-02)))
+      :snt4 (b / big
+            :polarity -
+            :domain c
+            :name (n2 / name
+                  :op1 "Fiona"))
+      :condition (a2 / and
+            :op1 r2
+            :ARG1 c)
+      :op2 (f / furry
+            :domain c)
+      :snt5 (f2 / furry
+            :polarity -
+            :domain c
+            :name (n3 / name
+                  :op1 "Fiona"))
+      :snt6 (g2 / green-03
+            :ARG1 (t3 / thing
+                  :mod (r3 / round)))
+      :snt7 (b2 / big
+            :polarity -
+            :domain (t4 / thing
+                  :mod (r4 / round)))
+      :snt8 (b3 / big
+            :polarity -
+            :domain (s / something)
+            :condition (a3 / and
+                  :op1 (a4 / and
+                        :op1 (r5 / round)
+                        :op2 f2)))
+      :snt8 (b4 / big
+            :domain (s2 / something
+                  :mod (f3 / furry)
+                  :mod a)))
+
+# ::id 37
+# ::snt Fiona is round. All green things are rough. White things are not cold. If Fiona is rough and Fiona is furry then Fiona is not big. If Fiona is cold and Fiona is rough then Fiona is not furry. If something is round and furry then it is not big. All furry things are big. If something is round and not green then it is not big. Fiona is cold.
+(m / multi-sentence
+      :snt1 (r / round-03
+            :ARG1 (c / city
+                  :name (n / name
+                        :op1 "Fiona")))
+      :snt2 (r2 / rough-02
+            :ARG1 (t / thing
+                  :ARG1-of (g / green-02)
+                  :mod (a / all)))
+      :snt3 (c2 / cold-01
+            :polarity -
+            :ARG1 (t2 / thing
+                  :ARG1-of (w / white-02)))
+      :snt4 (b / big
+            :polarity -
+            :domain c
+            :name (n2 / name
+                  :op1 "Fiona"))
+      :condition (a2 / and
+            :op1 (r3 / rough-04
+                  :ARG1 c)
+            :op2 (f / furry
+                  :domain c))
+      :snt5 (f2 / furry
+            :polarity -
+            :domain c)
+      :snt6 (b2 / big
+            :polarity -
+            :domain c
+            :name (n3 / name
+                  :op1 "Fiona"))
+      :condition (a3 / and
+            :op1 (c3 / cold-04
+                  :ARG1 c)
+            :op2 (r4 / rough-04
+                  :ARG1 c))
+      :snt3 (b3 / big
+            :polarity -
+            :domain (s / something
+                  :mod (r5 / round))
+            :domain (s2 / something
+                  :mod f2))
+      :snt4 (b4 / big
+            :domain (s3 / something
+                  :mod (f3 / furry)
+                  :mod a))
+      :snt5 (b5 / big
+            :polarity -
+            :domain (ii / it)
+            :condition (a4 / and
+                  :op1 (r6 / round)
+                  :op2 g
+                  :polarity -
+                  :ARG1 s3)))
+
+# ::id 38
+# ::snt The bald eagle chases the bear. The bear needs the bald eagle. If something chases the bald eagle then they do not chase the bear. If something needs the bald eagle then the bald eagle eats the bear. If something needs the bear then the bear is red. If something eats the bear then they are cold. If something is cold then they are not kind. If something eats the bear and they are not cold then the bear is not round.
+(m / multi-sentence
+      :snt1 (c / chase-01
+            :ARG0 (e / eagle
+                  :mod (b / bald))
+            :ARG1 (b2 / bear))
+      :snt2 (n / need-01
+            :ARG0 (b3 / bear)
+            :ARG1 (e2 / eagle
+                  :mod (b4 / bald)))
+      :snt3 (c2 / chase-01
+            :polarity -
+            :ARG0 (t / they)
+            :ARG1 (b5 / bear)
+            :condition (c3 / chase-01
+                  :ARG0 (s / something)
+                  :ARG1 e2))
+      :snt4 (e3 / eat-01
+            :ARG0 (e4 / eagle)
+            :ARG1 b5)
+      :snt5 (r / red-02
+            :ARG1 (b6 / bear)
+            :condition (n2 / need-01
+                  :ARG0 (s2 / something)
+                  :ARG1 b6))
+      :snt6 (c4 / cold-05
+            :ARG1 (t2 / they)
+            :condition c4
+            :ARG1 t2))
+
+# ::id 39
+# ::snt The bald eagle chases the bear. The bear needs the bald eagle. If something chases the bald eagle then they do not chase the bear. If something needs the bald eagle then the bald eagle eats the bear. If something needs the bear then the bear is red. If something eats the bear then they are cold. If something is cold then they are not kind. If something eats the bear and they are not cold then the bear is not round.
+(m / multi-sentence
+      :snt1 (c / chase-01
+            :ARG0 (e / eagle
+                  :mod (b / bald))
+            :ARG1 (b2 / bear))
+      :snt2 (n / need-01
+            :ARG0 (b3 / bear)
+            :ARG1 (e2 / eagle
+                  :mod (b4 / bald)))
+      :snt3 (c2 / chase-01
+            :polarity -
+            :ARG0 (t / they)
+            :ARG1 (b5 / bear)
+            :condition (c3 / chase-01
+                  :ARG0 (s / something)
+                  :ARG1 e2))
+      :snt4 (e3 / eat-01
+            :ARG0 (e4 / eagle)
+            :ARG1 b5)
+      :snt5 (r / red-02
+            :ARG1 (b6 / bear)
+            :condition (n2 / need-01
+                  :ARG0 (s2 / something)
+                  :ARG1 b6))
+      :snt6 (c4 / cold-05
+            :ARG1 (t2 / they)
+            :condition c4
+            :ARG1 t2))
+
+# ::id 40
+# ::snt The bald eagle chases the bear. The bear needs the bald eagle. If something chases the bald eagle then they do not chase the bear. If something needs the bald eagle then the bald eagle eats the bear. If something needs the bear then the bear is red. If something eats the bear then they are cold. If something is cold then they are not kind. If something eats the bear and they are not cold then the bear is not round.
+(m / multi-sentence
+      :snt1 (c / chase-01
+            :ARG0 (e / eagle
+                  :mod (b / bald))
+            :ARG1 (b2 / bear))
+      :snt2 (n / need-01
+            :ARG0 (b3 / bear)
+            :ARG1 (e2 / eagle
+                  :mod (b4 / bald)))
+      :snt3 (c2 / chase-01
+            :polarity -
+            :ARG0 (t / they)
+            :ARG1 (b5 / bear)
+            :condition (c3 / chase-01
+                  :ARG0 (s / something)
+                  :ARG1 e2))
+      :snt4 (e3 / eat-01
+            :ARG0 (e4 / eagle)
+            :ARG1 b5)
+      :snt5 (r / red-02
+            :ARG1 (b6 / bear)
+            :condition (n2 / need-01
+                  :ARG0 (s2 / something)
+                  :ARG1 b6))
+      :snt6 (c4 / cold-05
+            :ARG1 (t2 / they)
+            :condition c4
+            :ARG1 t2))
+
+# ::id 41
+# ::snt The bald eagle chases the bear. The bear needs the bald eagle. If something chases the bald eagle then they do not chase the bear. If something needs the bald eagle then the bald eagle eats the bear. If something needs the bear then the bear is red. If something eats the bear then they are cold. If something is cold then they are not kind. If something eats the bear and they are not cold then the bear is not round.
+(m / multi-sentence
+      :snt1 (c / chase-01
+            :ARG0 (e / eagle
+                  :mod (b / bald))
+            :ARG1 (b2 / bear))
+      :snt2 (n / need-01
+            :ARG0 (b3 / bear)
+            :ARG1 (e2 / eagle
+                  :mod (b4 / bald)))
+      :snt3 (c2 / chase-01
+            :polarity -
+            :ARG0 (t / they)
+            :ARG1 (b5 / bear)
+            :condition (c3 / chase-01
+                  :ARG0 (s / something)
+                  :ARG1 e2))
+      :snt4 (e3 / eat-01
+            :ARG0 (e4 / eagle)
+            :ARG1 b5)
+      :snt5 (r / red-02
+            :ARG1 (b6 / bear)
+            :condition (n2 / need-01
+                  :ARG0 (s2 / something)
+                  :ARG1 b6))
+      :snt6 (c4 / cold-05
+            :ARG1 (t2 / they)
+            :condition c4
+            :ARG1 t2))

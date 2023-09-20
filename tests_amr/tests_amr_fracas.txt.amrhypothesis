@@ -1,0 +1,838 @@
+# ::id 0
+# ::snt ITEL won the contract in 1992 ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (c2 / contract-02)
+      :time (d / date-entity
+            :year 1992))
+
+# ::id 1
+# ::snt ITEL won the contract in 1992 ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (c2 / contract-02)
+      :time (d / date-entity
+            :year 1992))
+
+# ::id 2
+# ::snt All residents of the North American continent can travel freely within Europe ?
+(p / possible-01
+      :polarity (a / amr-unknown)
+      :ARG1 (t / travel-01
+            :ARG0 (p2 / person
+                  :ARG0-of (r / reside-01
+                        :ARG1 (c / continent
+                              :name (n / name
+                                    :op1 "North"
+                                    :op2 "America")))
+                  :mod (a2 / all))
+            :ARG1-of (f / free-04)
+            :location c
+            :name (n2 / name
+                  :op1 "Europe")))
+
+# ::id 3
+# ::snt Bill spoke to Mary on Monday ?
+(s / speak-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Bill"))
+      :ARG2 (p2 / person
+            :name (n2 / name
+                  :op1 "Mary"))
+      :time (d / date-entity
+            :weekday (m / monday))
+      :polarity (a / amr-unknown))
+
+# ::id 4
+# ::snt ITEL existed in 1992 ?
+(e / exist-01
+      :polarity (a / amr-unknown)
+      :ARG1 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :time (d / date-entity
+            :year 1992))
+
+# ::id 5
+# ::snt Bill spoke to Mary ?
+(s / speak-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Bill"))
+      :ARG2 (p2 / person
+            :name (n2 / name
+                  :op1 "Mary")))
+
+# ::id 6
+# ::snt Both commissioners used to be in business ?
+(b / business
+      :polarity (a / amr-unknown)
+      :domain (c / commissioner
+            :mod (b2 / both))
+      :time (u / use-03))
+
+# ::id 7
+# ::snt Smith lived in Birmingham in 1992 ?
+(l / live-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :location (c / city
+            :name (n2 / name
+                  :op1 "Birmingham"))
+      :time (d / date-entity
+            :year 1992))
+
+# ::id 8
+# ::snt Dumbo is a small animal ?
+(a / animal
+      :polarity (a2 / amr-unknown)
+      :mod (s / small)
+      :domain (d / dumbo))
+
+# ::id 9
+# ::snt Dumbo is a small animal ?
+(a / animal
+      :polarity (a2 / amr-unknown)
+      :mod (s / small)
+      :domain (d / dumbo))
+
+# ::id 10
+# ::snt ITEL won more than one order ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :quant (m / more-than
+                  :op1 1)))
+
+# ::id 11
+# ::snt John said Bill had been hurt ?
+(s / say-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "John"))
+      :ARG1 (h / hurt-01
+            :ARG1 (p2 / person
+                  :name (n2 / name
+                        :op1 "Bill")))
+      :polarity (a / amr-unknown))
+
+# ::id 12
+# ::snt Few committee members are from southern Europe ?
+(b / be-from-91
+      :polarity (a / amr-unknown)
+      :ARG1 (p / person
+            :quant (f / few)
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / committee)
+                  :ARG2 (m / member)))
+      :ARG2 (w / world-region
+            :name (n / name
+                  :op1 "Southern"
+                  :op2 "Europe")))
+
+# ::id 13
+# ::snt Each European has the right to live in Europe ?
+(r / right-05
+      :polarity (a / amr-unknown)
+      :ARG1 (p / person
+            :mod (c / continent
+                  :name (n / name
+                        :op1 "Europe"))
+            :mod (e / each))
+      :ARG2 (l / live-01
+            :ARG0 p
+            :location c))
+
+# ::id 14
+# ::snt Some accountants attended the meeting ?
+(a / attend-01
+      :polarity (a2 / amr-unknown)
+      :ARG0 (a3 / accountant
+            :quant (s / some))
+      :ARG1 (m / meet-03))
+
+# ::id 15
+# ::snt ITEL won the contract in 1992 ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (c2 / contract-02)
+      :time (d / date-entity
+            :year 1992))
+
+# ::id 16
+# ::snt Smith owned a chain of business for more than two years ?
+(o / own-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (c / chain
+            :consist-of (b / business))
+      :duration (m / more-than
+            :op1 (t / temporal-quantity
+                  :quant 2
+                  :unit (y / year))))
+
+# ::id 17
+# ::snt There is a car that John and Bill own ?
+(o / own-01
+      :polarity (a / amr-unknown)
+      :ARG0 (a2 / and
+            :op1 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :op2 (p2 / person
+                  :name (n2 / name
+                        :op1 "Bill")))
+      :ARG1 (c / car))
+
+# ::id 18
+# ::snt APCOM won some orders ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "APCOM"))
+      :ARG1 (o / order-02
+            :quant (s / some)))
+
+# ::id 19
+# ::snt ITEL made a loss in 1993 ?
+(l / lose-03
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :time (d / date-entity
+            :year 1993))
+
+# ::id 20
+# ::snt If it was suggested that Bill and Frank's boss should go together, it was suggested that Carl and Alan's wife should go together ?
+(s / suggest-01
+      :polarity (a / amr-unknown)
+      :ARG1 (r / recommend-01
+            :ARG1 (g / go-02
+                  :ARG0 (a2 / and
+                        :op1 (p / person
+                              :name (n / name
+                                    :op1 "Bill"))
+                        :op2 (p2 / person
+                              :name (n2 / name
+                                    :op1 "Frank"))
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 (p3 / person
+                                    :name (n3 / name
+                                          :op1 "Bill"))
+                              :ARG2 (b / boss)))
+                  :manner (t / together)))
+      :condition (s2 / suggest-01
+            :ARG1 (r2 / recommend-01
+                  :ARG1 (g2 / go-02
+                        :ARG0 (a3 / and
+                              :op1 p3
+                              :op2 (p4 / person
+                                    :name (n4 / name
+                                          :op1 "Carl"))
+                              :op2 (p5 / person
+                                    :ARG0-of (h2 / have-rel-role-91
+                                          :ARG1 (p6 / person
+                                                :name (n5 / name
+                                                      :op1 "Alan"))
+                                          :ARG2 (w / wife))))
+                        :manner (t2 / together)))))
+
+# ::id 21
+# ::snt ITEL won a contract in 1993 ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (c2 / contract-02)
+      :time (d / date-entity
+            :year 1993))
+
+# ::id 22
+# ::snt Eight machines have been removed ?
+(r / remove-01
+      :polarity (a / amr-unknown)
+      :ARG1 (m / machine
+            :quant 8))
+
+# ::id 23
+# ::snt APCOM lost some orders ?
+(l / lose-02
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "APCOM"))
+      :ARG1 (o / order-02
+            :quant (s / some)))
+
+# ::id 24
+# ::snt Smith spent two years running his own business ?
+(s / spend-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (t / temporal-quantity
+            :quant 2
+            :unit (y / year))
+      :ARG2 (r / run-01
+            :ARG0 p
+            :ARG1 (b / business
+                  :poss p)))
+
+# ::id 25
+# ::snt Fido is a small animal ?
+(a / animal
+      :polarity (a2 / amr-unknown)
+      :mod (s / small)
+      :domain (d / dog))
+
+# ::id 26
+# ::snt John spoke to Sue ?
+(s / speak-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "John"))
+      :ARG2 (p2 / person
+            :name (n2 / name
+                  :op1 "Sue")))
+
+# ::id 27
+# ::snt Smith ran his own business ?
+(r / run-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (b / business
+            :poss p))
+
+# ::id 28
+# ::snt Jones claimed Smith had costed Jones' proposal ?
+(c / claim-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Jones"))
+      :ARG1 (c2 / cost-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Smith"))
+            :ARG1 (t / thing
+                  :ARG1-of (p3 / propose-01
+                        :ARG0 p)))
+      :polarity (a / amr-unknown))
+
+# ::id 29
+# ::snt Some delegates finished the survey ?
+(f / finish-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG0-of (d / delegate-01)
+            :quant (s / some))
+      :ARG1 (s2 / survey-01))
+
+# ::id 30
+# ::snt An Irishman won a Nobel prize ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Ireland")))
+      :ARG1 (p2 / prize
+            :name (n2 / name
+                  :op1 "Nobel"
+                  :op2 "Prize")))
+
+# ::id 31
+# ::snt John is a university student ?
+(p / person
+      :polarity (a / amr-unknown)
+      :ARG0-of (s / study-01
+            :location (u / university))
+      :domain (p2 / person
+            :name (n / name
+                  :op1 "John")))
+
+# ::id 32
+# ::snt At least three commissioners spend time at home ?
+(s / spend-02
+      :polarity (a / amr-unknown)
+      :ARG0 (c / commissioner
+            :quant (a2 / at-least
+                  :op1 3))
+      :ARG1 (t / time)
+      :location (h / home))
+
+# ::id 33
+# ::snt Smith owned a chain of business for two years ?
+(o / own-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (c / chain
+            :consist-of (b / business))
+      :duration (t / temporal-quantity
+            :quant 2
+            :unit (y / year)))
+
+# ::id 34
+# ::snt At most ten commissioners spend time at home ?
+(s / spend-02
+      :polarity (a / amr-unknown)
+      :ARG0 (c / commissioner
+            :quant (a2 / at-most
+                  :op1 10))
+      :ARG1 (t / time)
+      :location (h / home))
+
+# ::id 35
+# ::snt There are great tenors who are British ?
+(t / tenor
+      :polarity (a / amr-unknown)
+      :mod (g / great)
+      :mod (c / country
+            :name (n / name
+                  :op1 "Britain")))
+
+# ::id 36
+# ::snt Most companies that own a computer have a service contract for it ?
+(h / have-03
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :quant (m / most)
+            :ARG0-of (o / own-01
+                  :ARG1 (c2 / computer)))
+      :ARG1 (c3 / contract
+            :mod (s / service)
+            :purpose c2))
+
+# ::id 37
+# ::snt There are great tenors who sing popular music ?
+(t / tenor
+      :polarity (a / amr-unknown)
+      :mod (g / great)
+      :ARG0-of (s / sing-01
+            :ARG1 (m / music
+                  :ARG1-of (p / popular-02))))
+
+# ::id 38
+# ::snt ITEL won some orders ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :quant (s / some)))
+
+# ::id 39
+# ::snt Jones swam after Smith swam ?
+(s / swim-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Jones"))
+      :time (a2 / after
+            :op1 (s2 / swim-01
+                  :ARG0 (p2 / person
+                        :name (n2 / name
+                              :op1 "Smith")))))
+
+# ::id 40
+# ::snt Every Ancient Greek was a noted philosopher ?
+(p / philosopher
+      :polarity (a / amr-unknown)
+      :ARG1-of (n / note-01)
+      :domain (p2 / person
+            :mod (a2 / ancient)
+            :mod (e / every)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "Greece"))))
+
+# ::id 41
+# ::snt Mary has a workstation ?
+(h / have-03
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Mary"))
+      :ARG1 (w / workstation))
+
+# ::id 42
+# ::snt Ten machines were here yesterday ?
+(b / be-located-at-91
+      :ARG1 (m / machine
+            :quant 10)
+      :ARG2 (h / here)
+      :time (y / yesterday)
+      :polarity (a / amr-unknown))
+
+# ::id 43
+# ::snt One of the commissioners spends a lot of time at home ?
+(s / spend-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :ARG1-of (ii / include-91
+                  :ARG2 (p2 / person
+                        :ARG0-of (h / have-org-role-91
+                              :ARG2 (c / commissioner)))))
+      :ARG1 (t / time
+            :quant (l / lot))
+      :location (h2 / home))
+
+# ::id 44
+# ::snt Jones was writing a report before Smith was writing a report ?
+(w / write-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Jones"))
+      :ARG1 (r / report-01)
+      :time (b / before
+            :op1 (w2 / write-01
+                  :ARG0 (p2 / person
+                        :name (n2 / name
+                              :op1 "Smith"))
+                  :ARG1 r))
+      :polarity (a / amr-unknown))
+
+# ::id 45
+# ::snt There are few committee members from Portugal ?
+(p / person
+      :polarity (a / amr-unknown)
+      :ARG0-of (h / have-org-role-91
+            :ARG1 (c / committee)
+            :ARG2 (m / member))
+      :quant (f / few)
+      :source (c2 / country
+            :name (n / name
+                  :op1 "Portugal")))
+
+# ::id 46
+# ::snt Smith spent more than two years running his own business ?
+(s / spend-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (m / more-than
+            :op1 (t / temporal-quantity
+                  :quant 2
+                  :unit (y / year)))
+      :ARG2 (r / run-01
+            :ARG0 p
+            :ARG1 (b / business
+                  :poss p)))
+
+# ::id 47
+# ::snt All fat legal authorities are fat law lecturers ?
+(p / person
+      :polarity (a / amr-unknown)
+      :ARG0-of (l / lecture-01
+            :ARG1 (l2 / law))
+      :domain (a2 / authority
+            :mod (a3 / all)
+            :ARG1-of (f / fat-03)
+            :ARG1-of (l3 / legal-02)))
+
+# ::id 48
+# ::snt Mary used a workstation ?
+(u / use-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Mary"))
+      :ARG1 (w / workstation))
+
+# ::id 49
+# ::snt ITEL delivered reports late in 1993 ?
+(d / deliver-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (r / report-01)
+      :time (l / late
+            :op1 (d2 / date-entity
+                  :year 1993)))
+
+# ::id 50
+# ::snt Mary has a workstation ?
+(h / have-03
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Mary"))
+      :ARG1 (w / workstation))
+
+# ::id 51
+# ::snt Jones claimed he had costed Smith's proposal ?
+(c / claim-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Jones"))
+      :ARG1 (c2 / cost-01
+            :ARG0 p
+            :ARG1 (t / thing
+                  :ARG1-of (p2 / propose-01
+                        :ARG0 (p3 / person
+                              :name (n2 / name
+                                    :op1 "Smith"))))))
+
+# ::id 52
+# ::snt Smith took five laptop computers to the meeting ?
+(t / take-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (c / computer
+            :quant 5
+            :mod (l / laptop))
+      :ARG4 (m / meet-03))
+
+# ::id 53
+# ::snt Bill said Peter wrote a report ?
+(s / say-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Bill"))
+      :ARG1 (w / write-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Peter"))
+            :ARG1 (r / report-01))
+      :polarity (a / amr-unknown))
+
+# ::id 54
+# ::snt ITEL won at least eleven orders ?
+(w / win-01
+      :polarity (a / amr-unknown)
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :quant (a2 / at-least
+                  :op1 11)))
+
+# ::id 55
+# ::snt Jones has a company car ?
+(h / have-03
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Jones"))
+      :ARG1 (c / car
+            :poss (c2 / company)))
+
+# ::id 56
+# ::snt Smith will make a poor stock market trader ?
+(m / make-02
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (p2 / person
+            :mod (p3 / poor)
+            :ARG0-of (t / trade-01
+                  :ARG1 (m2 / market
+                        :mod (s / stock)))))
+
+# ::id 57
+# ::snt The PC-6082 is faster than the ITEL-ZX ?
+(h / have-degree-91
+      :ARG1 (p / product
+            :name (n / name
+                  :op1 "PC-6082"))
+      :ARG2 (f / fast-02)
+      :ARG3 (m / more)
+      :ARG4 (p2 / product
+            :name (n2 / name
+                  :op1 "ITEL-ZX"))
+      :polarity (a / amr-unknown))
+
+# ::id 58
+# ::snt If it was suggested that Bill and Frank's boss should go together, it was suggested that Carl and Alan should go together ?
+(s / suggest-01
+      :polarity (a / amr-unknown)
+      :ARG1 (r / recommend-01
+            :ARG1 (g / go-02
+                  :ARG0 (a2 / and
+                        :op1 (p / person
+                              :name (n / name
+                                    :op1 "Bill"))
+                        :op2 (p2 / person
+                              :name (n2 / name
+                                    :op1 "Frank")
+                              :ARG0-of (h / have-rel-role-91
+                                    :ARG1 (p3 / person
+                                          :name (n3 / name
+                                                :op1 "Bill"))
+                                    :ARG2 (b / boss))))
+                  :manner (t / together)))
+      :condition (s2 / suggest-01
+            :ARG1 (r2 / recommend-01
+                  :ARG1 (g2 / go-02
+                        :ARG0 (a3 / and
+                              :op1 p3
+                              :op2 (p4 / person
+                                    :name (n4 / name
+                                          :op1 "Carl"))
+                              :op2 (p5 / person
+                                    :name (n5 / name
+                                          :op1 "Alan")))
+                        :manner (t2 / together)))))
+
+# ::id 59
+# ::snt Every Ancient Greek was a noted philosopher ?
+(p / philosopher
+      :polarity (a / amr-unknown)
+      :ARG1-of (n / note-01)
+      :domain (p2 / person
+            :mod (a2 / ancient)
+            :mod (e / every)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "Greece"))))
+
+# ::id 60
+# ::snt There are tenors who will contribute their fees to charity ?
+(c / contribute-01
+      :polarity (a / amr-unknown)
+      :ARG0 (t / tenor)
+      :ARG1 (f / fee
+            :poss t)
+      :ARG2 (c2 / charity))
+
+# ::id 61
+# ::snt APCOM has a more important customer than ITEL is ?
+(h / have-03
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "APCOM"))
+      :ARG1 (c2 / customer
+            :ARG1-of (h2 / have-degree-91
+                  :ARG2 (ii / important-01
+                        :ARG1 c2)
+                  :ARG3 (m / more)
+                  :ARG4 (c3 / customer
+                        :ARG0-of (h3 / have-03
+                              :ARG1 (c4 / company
+                                    :name (n2 / name
+                                          :op1 "ITEL"))))))
+      :polarity (a / amr-unknown))
+
+# ::id 62
+# ::snt Smith saw Jones sign the contract ?
+(s / see-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (s2 / sign-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Jones"))
+            :ARG1 (c / contract-02)))
+
+# ::id 63
+# ::snt Bill spoke to Mary at five o'clock ?
+(s / speak-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Bill"))
+      :ARG2 (p2 / person
+            :name (n2 / name
+                  :op1 "Mary"))
+      :time (d / date-entity
+            :time "5:00"))
+
+# ::id 64
+# ::snt Mary's story lasted as long as Jones's updating the program ?
+(l / last-04
+      :polarity (a / amr-unknown)
+      :ARG1 (s / story
+            :poss (p / person
+                  :name (n / name
+                        :op1 "Mary")))
+      :ARG2 (l2 / long-03
+            :ARG2-of (h / have-degree-91
+                  :ARG1 s
+                  :ARG3 (e / equal)
+                  :ARG4 (u / update-02
+                        :ARG0 (p2 / person
+                              :name (n2 / name
+                                    :op1 "Jones"))
+                        :ARG1 (p3 / program)))))
+
+# ::id 65
+# ::snt Every representative and every client was at the meeting ?
+(b / be-located-at-91
+      :ARG1 (a / and
+            :op1 (p / person
+                  :ARG0-of (r / represent-01))
+            :op2 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (c / client)))
+            :mod (e / every))
+      :ARG2 (m / meet-03)
+      :polarity (a2 / amr-unknown))
+
+# ::id 66
+# ::snt Mary used her workstation ?
+(u / use-01
+      :polarity (a / amr-unknown)
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Mary"))
+      :ARG1 (w / workstation
+            :poss p))
+
+# ::id 67
+# ::snt None
+(n / none)
+
+# ::id 68
+# ::snt There was one auditor who signed all the reports ?
+(p / person
+      :polarity (a / amr-unknown)
+      :ARG0-of (a2 / audit-01)
+      :ARG0-of (s / sign-01
+            :ARG1 (r / report-01
+                  :mod (a3 / all))))
+
+# ::id 69
+# ::snt All competent legal authorities are competent law lecturers ?
+(p / person
+      :polarity (a / amr-unknown)
+      :ARG0-of (l / lecture-01
+            :ARG1 (l2 / law))
+      :domain (a2 / authority
+            :ARG1-of (c / competent-01
+                  :ARG2 (l3 / law))
+            :mod (a3 / all)))

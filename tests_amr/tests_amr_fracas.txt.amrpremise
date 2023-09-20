@@ -1,0 +1,1104 @@
+# ::id 0
+# ::snt Smith knew that ITEL had won the contract in 1992.
+(k / know-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (w / win-01
+            :ARG0 (c / company
+                  :name (n2 / name
+                        :op1 "ITEL"))
+            :ARG1 (c2 / contract-02)
+            :time (d / date-entity
+                  :year 1992)))
+
+# ::id 1
+# ::snt It is true that ITEL won the contract in 1992.
+(t / true-01
+      :ARG1 (w / win-01
+            :ARG0 (c / company
+                  :name (n / name
+                        :op1 "ITEL"))
+            :ARG1 (c2 / contract-02)
+            :time (d / date-entity
+                  :year 1992)))
+
+# ::id 2
+# ::snt All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the North American continent.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (t / travel-01
+                  :ARG0 (p2 / person
+                        :ARG0-of (r / reside-01
+                              :ARG1 (c / country
+                                    :name (n / name
+                                          :op1 "Canada")))
+                        :mod (a / all))
+                  :ARG1-of (f / free-04)
+                  :location (c2 / continent
+                        :name (n2 / name
+                              :op1 "Europe"))))
+      :snt2 (p3 / person
+            :ARG0-of (r2 / reside-01
+                  :ARG1 c
+                  :mod (e / every))
+            :ARG0-of (r3 / reside-01
+                  :ARG1 c2
+                  :name (n3 / name
+                        :op1 "North"
+                        :op2 "America"))))
+
+# ::id 3
+# ::snt John spoke to Mary on Monday. Bill didn't.
+(m / multi-sentence
+      :snt1 (s / speak-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :ARG2 (p2 / person
+                  :name (n2 / name
+                        :op1 "Mary"))
+            :time (d / date-entity
+                  :weekday (m2 / monday)))
+      :snt2 (s2 / speak-01
+            :polarity -
+            :ARG0 (p3 / person
+                  :name (n3 / name
+                        :op1 "Bill"))
+            :ARG2 p3))
+
+# ::id 4
+# ::snt In March 1993 APCOM founded ITEL.
+(f / found-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "APCOM"))
+      :ARG1 (c2 / company
+            :name (n2 / name
+                  :op1 "ITEL"))
+      :time (d / date-entity
+            :month 3
+            :year 1993))
+
+# ::id 5
+# ::snt Bill spoke to everyone that John did. John spoke to Mary.
+(m / multi-sentence
+      :snt1 (s / speak-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Bill"))
+            :ARG2 (e / everyone)
+            :ARG1-of (r / resemble-01
+                  :ARG2 (s2 / speak-01
+                        :ARG0 (p2 / person
+                              :name (n2 / name
+                                    :op1 "John")))))
+      :snt2 (s3 / speak-01
+            :ARG0 (p3 / person
+                  :name (n3 / name
+                        :op1 "John"))
+            :ARG2 (p4 / person
+                  :name (n4 / name
+                        :op1 "Mary"))))
+
+# ::id 6
+# ::snt Both female commissioners used to be in business.
+(b / business
+      :domain (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (c / commissioner))
+            :mod (f / female)
+            :mod (b2 / both))
+      :time (u / use-03))
+
+# ::id 7
+# ::snt Smith lived in Birmingham in 1991.
+(l / live-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :location (c / city
+            :name (n2 / name
+                  :op1 "Birmingham"))
+      :time (d / date-entity
+            :year 1991))
+
+# ::id 8
+# ::snt All elephants are large animals. Dumbo is a small elephant.
+(m / multi-sentence
+      :snt1 (a / animal
+            :mod (l / large)
+            :domain (e / elephant
+                  :mod (a2 / all)))
+      :snt2 (e2 / elephant
+            :mod (s / small)
+            :domain (p / person
+                  :name (n / name
+                        :op1 "Dumbo"))))
+
+# ::id 9
+# ::snt Dumbo is a large animal.
+(a / animal
+      :mod (l / large)
+      :domain (d / dumbo))
+
+# ::id 10
+# ::snt ITEL won more orders than the APCOM contract.
+(w / win-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :ARG1-of (h / have-quant-91
+                  :ARG3 (m / more)
+                  :ARG4 (c2 / contract-02
+                        :ARG0 (c3 / company
+                              :name (n2 / name
+                                    :op1 "APCOM"))))))
+
+# ::id 11
+# ::snt John said Bill had hurt himself.
+(s / say-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "John"))
+      :ARG1 (h / hurt-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Bill"))
+            :ARG1 p2))
+
+# ::id 12
+# ::snt Few female committee members are from southern Europe.
+(b / be-from-91
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / committee)
+                  :ARG2 (m / member))
+            :mod (f / female)
+            :quant (f2 / few))
+      :ARG2 (w / world-region
+            :name (n / name
+                  :op1 "Southern"
+                  :op2 "Europe")))
+
+# ::id 13
+# ::snt Each European can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.
+(m / multi-sentence
+      :snt1 (p / possible-01
+            :ARG1 (t / travel-01
+                  :ARG0 (p2 / person
+                        :mod (c / continent
+                              :name (n / name
+                                    :op1 "Europe"))
+                        :mod (e / each))
+                  :ARG1-of (f / free-04)
+                  :location c))
+      :snt2 (p3 / person
+            :domain (p4 / person
+                  :mod (e2 / every)
+                  :mod c
+                  :name (n2 / name
+                        :op1 "Europe")))
+      :snt3 (p5 / possible-01
+            :ARG1 (t2 / travel-01
+                  :ARG0 (p6 / person
+                        :mod (e3 / every)
+                        :ARG1-of (r / right-05
+                              :ARG2 (l / live-01
+                                    :ARG0 p6
+                                    :location c)))
+                  :ARG1 c
+                  :ARG1-of (f2 / free-04))))
+
+# ::id 14
+# ::snt Just one accountant attended the meeting.
+(a / attend-01
+      :ARG0 (a2 / accountant
+            :quant 1
+            :mod (j / just))
+      :ARG1 (m / meet-03))
+
+# ::id 15
+# ::snt It is false that ITEL won the contract in 1992.
+(f / false
+      :domain (w / win-01
+            :ARG0 (c / company
+                  :name (n / name
+                        :op1 "ITEL"))
+            :ARG1 (c2 / contract-02)
+            :time (d / date-entity
+                  :year 1992)))
+
+# ::id 16
+# ::snt In two years Smith owned a chain of businesses.
+(o / own-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (c / chain
+            :consist-of (b / business))
+      :duration (t / temporal-quantity
+            :quant 2
+            :unit (y / year)))
+
+# ::id 17
+# ::snt John owns a car. Bill owns one too.
+(m / multi-sentence
+      :snt1 (o / own-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :ARG1 (c / car))
+      :snt2 (o2 / own-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Bill"))
+            :ARG1 (c2 / car)
+            :mod (t / too)))
+
+# ::id 18
+# ::snt ITEL won more orders than APCOM.
+(w / win-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :ARG1-of (h / have-quant-91
+                  :ARG3 (m / more)
+                  :ARG4 (o2 / order-02
+                        :ARG0 (c2 / company
+                              :name (n2 / name
+                                    :op1 "APCOM"))))))
+
+# ::id 19
+# ::snt ITEL has made a loss since 1992. It is now 1996.
+(m / multi-sentence
+      :snt1 (l / lose-03
+            :ARG0 (c / company
+                  :name (n / name
+                        :op1 "ITEL"))
+            :time (s / since
+                  :op1 (d / date-entity
+                        :year 1992)))
+      :snt2 (d2 / date-entity
+            :year 1996
+            :time (n2 / now)))
+
+# ::id 20
+# ::snt Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.
+(a / and
+      :op1 (s / suggest-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Bill"))
+            :ARG1 (r / recommend-01
+                  :ARG1 (g / go-02
+                        :ARG0 (t / they)
+                        :ARG4 (m / meet-03)
+                        :manner (t2 / together)))
+            :ARG2 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 (p3 / person
+                              :name (n2 / name
+                                    :op1 "Frank"))
+                        :ARG2 (b / boss))))
+      :op2 (s2 / suggest-01
+            :ARG0 p
+            :ARG2 (p4 / person
+                  :name (n3 / name
+                        :op1 "Carlos"))
+            :ARG2 (p5 / person
+                  :ARG0-of (h2 / have-rel-role-91
+                        :ARG1 (p6 / person
+                              :name (n4 / name
+                                    :op1 "Alan"))
+                        :ARG2 (w / wife)))))
+
+# ::id 21
+# ::snt ITEL was winning the contract from APCOM in 1993.
+(w / win-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (c2 / contract-02
+            :ARG0 c
+            :ARG2 (c3 / company
+                  :name (n2 / name
+                        :op1 "APCOM")))
+      :time (d / date-entity
+            :year 1993))
+
+# ::id 22
+# ::snt Two out of ten machines are missing. They have been removed.
+(m / multi-sentence
+      :snt1 (m2 / miss-01
+            :ARG1 (m3 / machine
+                  :quant 2
+                  :ARG1-of (ii / include-91
+                        :ARG2 (m4 / machine
+                              :quant 10))))
+      :snt2 (r / remove-01
+            :ARG1 (m5 / machine)))
+
+# ::id 23
+# ::snt ITEL won more orders than APCOM lost.
+(w / win-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :ARG0 c
+            :ARG1-of (h / have-quant-91
+                  :ARG3 (m / more)
+                  :ARG4 (o2 / order-02
+                        :ARG0 (c2 / company
+                              :name (n2 / name
+                                    :op1 "APCOM"))))))
+
+# ::id 24
+# ::snt Smith was running his own business in two years.
+(r / run-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (b / business
+            :poss p)
+      :time (a / after
+            :op1 (n2 / now)
+            :quant (t / temporal-quantity
+                  :quant 2
+                  :unit (y / year))))
+
+# ::id 25
+# ::snt Fido is not a large animal.
+(a / animal
+      :mod (l / large
+            :polarity -)
+      :domain (d / dog))
+
+# ::id 26
+# ::snt John spoke to Mary. And to Sue.
+(m / multi-sentence
+      :snt1 (s / speak-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :ARG2 (p2 / person
+                  :name (n2 / name
+                        :op1 "Mary")))
+      :snt2 (s2 / speak-01
+            :ARG0 p
+            :ARG2 (p3 / person
+                  :name (n3 / name
+                        :op1 "Sue"))))
+
+# ::id 27
+# ::snt Smith ran his own business for two years.
+(r / run-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (b / business
+            :poss p)
+      :duration (t / temporal-quantity
+            :quant 2
+            :unit (y / year)))
+
+# ::id 28
+# ::snt Smith claimed he had costed his proposal and so did Jones.
+(a / and
+      :op1 (c / claim-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Smith"))
+            :ARG1 (c2 / cost-01
+                  :ARG0 p
+                  :ARG1 (t / thing
+                        :ARG1-of (p2 / propose-01
+                              :ARG0 p))))
+      :op2 (c3 / claim-01
+            :ARG0 (p3 / person
+                  :name (n2 / name
+                        :op1 "Jones"))
+            :ARG1 c2))
+
+# ::id 29
+# ::snt Some delegates finished the survey on time.
+(f / finish-01
+      :ARG0 (p / person
+            :ARG1-of (d / delegate-01)
+            :quant (s / some))
+      :ARG1 (s2 / survey-01)
+      :time (o / on-time))
+
+# ::id 30
+# ::snt An Irishman won the Nobel prize for literature.
+(w / win-01
+      :ARG0 (p / person
+            :mod (c / country
+                  :name (n / name
+                        :op1 "Ireland")))
+      :ARG1 (a / award
+            :name (n2 / name
+                  :op1 "Nobel"
+                  :op2 "Prize")
+            :topic (l / literature)))
+
+# ::id 31
+# ::snt John is a former successful university student.
+(p / person
+      :name (n / name
+            :op1 "John")
+      :ARG0-of (s / succeed-01)
+      :ARG0-of (s2 / study-01
+            :location (u / university))
+      :time (f / former))
+
+# ::id 32
+# ::snt At least three commissioners spend a lot of time at home.
+(s / spend-02
+      :ARG0 (c / commissioner
+            :quant (a / at-least
+                  :op1 3))
+      :ARG1 (t / time
+            :quant (l / lot))
+      :location (h / home))
+
+# ::id 33
+# ::snt In two years Smith owned a chain of businesses.
+(o / own-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (c / chain
+            :consist-of (b / business))
+      :duration (t / temporal-quantity
+            :quant 2
+            :unit (y / year)))
+
+# ::id 34
+# ::snt At most ten commissioners spend a lot of time at home.
+(s / spend-02
+      :ARG0 (p / person
+            :quant 10
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (c / commissioner))
+            :mod (a / at-most))
+      :ARG1 (t / time
+            :quant (l / lot))
+      :location (h2 / home))
+
+# ::id 35
+# ::snt Several great tenors are British.
+(p / person
+      :mod (c / country
+            :name (n / name
+                  :op1 "Britain"))
+      :domain (t / tenor
+            :mod (g / great)
+            :quant (s / several)))
+
+# ::id 36
+# ::snt There are 100 companies. ICM is one of the companies and owns 150 computers. It does not have service contracts for any of its computers. Each of the other 99 companies owns one computer. They have service contracts for them.
+(m / multi-sentence
+      :snt1 (c / company
+            :quant 100)
+      :snt2 (a / and
+            :op1 (c2 / company
+                  :name (n / name
+                        :op1 "ICM")
+                  :ARG1-of (ii / include-91
+                        :ARG2 (c3 / company)))
+            :op2 (o / own-01
+                  :ARG0 c3
+                  :ARG1 (c4 / computer
+                        :quant 150)))
+      :snt3 (h / have-03
+            :polarity -
+            :ARG0 (ii2 / it)
+            :ARG1 (c5 / contract-02
+                  :ARG0 c3
+                  :ARG1 (s / service)
+                  :ARG2 (c6 / computer
+                        :quant (a2 / any)
+                        :poss ii2)))
+      :snt4 (o2 / own-01
+            :ARG0 (c7 / company
+                  :quant 99
+                  :mod (e / each)
+                  :mod (o3 / other))
+            :ARG1 (c8 / computer
+                  :quant 1))
+      :snt5 (h2 / have-03
+            :ARG0 (t / they)
+            :ARG1 (c9 / contract-02
+                  :ARG1 (s2 / serve-01
+                        :ARG1 t))))
+
+# ::id 37
+# ::snt A few great tenors sing popular music. Some great tenors like popular music.
+(m / multi-sentence
+      :snt1 (s / sing-01
+            :ARG0 (t / tenor
+                  :mod (g / great)
+                  :quant (f / few))
+            :ARG1 (m2 / music
+                  :mod (p / popular)))
+      :snt2 (l / like-01
+            :ARG0 (t2 / tenor
+                  :mod (g2 / great)
+                  :quant (s2 / some))
+            :ARG1 (m3 / music
+                  :mod (p2 / popular))))
+
+# ::id 38
+# ::snt ITEL won more orders than APCOM lost.
+(w / win-01
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "ITEL"))
+      :ARG1 (o / order-02
+            :ARG0 c
+            :ARG1-of (h / have-quant-91
+                  :ARG3 (m / more)
+                  :ARG4 (o2 / order-02
+                        :ARG0 (c2 / company
+                              :name (n2 / name
+                                    :op1 "APCOM"))))))
+
+# ::id 39
+# ::snt Smith swam. Jones swam. Smith swam before Jones swam.
+(m / multi-sentence
+      :snt1 (s / swim-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Smith")))
+      :snt2 (s2 / swim-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Jones")))
+      :snt3 (s3 / swim-01
+            :ARG0 (p3 / person
+                  :name (n3 / name
+                        :op1 "Smith"))
+            :time (b / before
+                  :op1 (s4 / swim-01
+                        :ARG0 p3))))
+
+# ::id 40
+# ::snt The Ancient Greeks were all noted philosophers.
+(p / philosopher
+      :ARG1-of (n / note-01)
+      :domain (p2 / person
+            :mod (a / ancient)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "Greece"))
+            :mod (a2 / all)))
+
+# ::id 41
+# ::snt Every student used her workstation. Mary is a student.
+(m / multi-sentence
+      :snt1 (u / use-01
+            :ARG0 (p / person
+                  :ARG0-of (s / study-01)
+                  :mod (e / every))
+            :ARG1 (w / workstation
+                  :poss p))
+      :snt2 (p2 / person
+            :name (n / name
+                  :op1 "Mary")
+            :ARG0-of (s2 / study-01)))
+
+# ::id 42
+# ::snt Two out of ten machines are missing. They were all here yesterday.
+(m / multi-sentence
+      :snt1 (m2 / miss-01
+            :ARG1 (m3 / machine
+                  :quant 2
+                  :ARG1-of (ii / include-91
+                        :ARG2 (m4 / machine
+                              :quant 10))))
+      :snt2 (b / be-located-at-91
+            :ARG1 (t / they
+                  :mod (a / all))
+            :ARG2 (h / here)
+            :time (y / yesterday)))
+
+# ::id 43
+# ::snt Neither female commissioner spends a lot of time at home.
+(s / spend-02
+      :polarity -
+      :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (c / commissioner))
+            :mod (f / female))
+      :ARG1 (t / time
+            :quant (l / lot))
+      :location (h2 / home))
+
+# ::id 44
+# ::snt Smith was writing a report. Jones was writing a report. Smith was writing a report after Jones was writing a report.
+(m / multi-sentence
+      :snt1 (w / write-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Smith"))
+            :ARG1 (r / report))
+      :snt2 (w2 / write-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Jones"))
+            :ARG1 (r2 / report))
+      :snt3 (w3 / write-01
+            :ARG0 (p3 / person
+                  :name (n3 / name
+                        :op1 "Smith"))
+            :ARG1 (r3 / report)
+            :time (a / after
+                  :op1 (w4 / write-01
+                        :ARG0 p3
+                        :ARG1 r3))))
+
+# ::id 45
+# ::snt Few committee members are from southern Europe. All committee members are people. All people who are from Portugal are from southern Europe.
+(m / multi-sentence
+      :snt1 (b / be-from-91
+            :ARG1 (p / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / committee)
+                        :ARG2 (m2 / member))
+                  :quant (f / few))
+            :ARG2 (w / world-region
+                  :name (n / name
+                        :op1 "Southern"
+                        :op2 "Europe")))
+      :snt2 (p2 / person
+            :domain (p3 / person
+                  :mod (a / all)
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (c2 / committee)
+                        :ARG2 (m3 / member))))
+      :snt3 (p4 / person
+            :mod (a2 / all)
+            :source (c3 / country
+                  :name (n2 / name
+                        :op1 "Portugal"))
+            :source (s / south
+                  :part-of (c4 / continent
+                        :name (n3 / name
+                              :op1 "Europe")))))
+
+# ::id 46
+# ::snt Smith was running his own business in two years.
+(r / run-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (b / business
+            :poss p)
+      :time (a / after
+            :op1 (n2 / now)
+            :quant (t / temporal-quantity
+                  :quant 2
+                  :unit (y / year))))
+
+# ::id 47
+# ::snt All legal authorities are law lecturers. All law lecturers are legal authorities.
+(m / multi-sentence
+      :snt1 (p / person
+            :ARG0-of (l / lecture-01
+                  :ARG1 (l2 / law))
+            :domain (a / authority
+                  :ARG1-of (l3 / legal-02)
+                  :mod (a2 / all)))
+      :snt2 (a3 / authority
+            :mod (l4 / law)
+            :domain (p2 / person
+                  :ARG0-of (l5 / lecture-01
+                        :ARG1 (l6 / law))
+                  :mod (a4 / all))))
+
+# ::id 48
+# ::snt No student used her workstation. Mary is a student.
+(m / multi-sentence
+      :snt1 (u / use-01
+            :polarity -
+            :ARG0 (p / person
+                  :ARG0-of (s / study-01))
+            :ARG1 (w / workstation
+                  :poss p))
+      :snt2 (p2 / person
+            :name (n / name
+                  :op1 "Mary")
+            :ARG0-of (s2 / study-01)))
+
+# ::id 49
+# ::snt ITEL never delivers reports late. In 1993 ITEL delivered reports.
+(m / multi-sentence
+      :snt1 (d / deliver-01
+            :polarity -
+            :ARG0 (c / company
+                  :name (n / name
+                        :op1 "ITEL"))
+            :ARG1 (r / report-01)
+            :time (e / ever)
+            :time (l / late))
+      :snt2 (d2 / deliver-01
+            :ARG0 c
+            :ARG1 (r2 / report-01)
+            :time (d3 / date-entity
+                  :year 1993)))
+
+# ::id 50
+# ::snt Mary used her workstation.
+(u / use-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Mary"))
+      :ARG1 (w / workstation
+            :poss p))
+
+# ::id 51
+# ::snt Smith claimed he had costed his proposal and so did Jones.
+(a / and
+      :op1 (c / claim-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Smith"))
+            :ARG1 (c2 / cost-01
+                  :ARG0 p
+                  :ARG1 (t / thing
+                        :ARG1-of (p2 / propose-01
+                              :ARG0 p))))
+      :op2 (c3 / claim-01
+            :ARG0 (p3 / person
+                  :name (n2 / name
+                        :op1 "Jones"))
+            :ARG1 c2))
+
+# ::id 52
+# ::snt Every executive who had a laptop computer brought it to take notes at the meeting. Smith is a executive who owns five different laptop computers.
+(m / multi-sentence
+      :snt1 (b / bring-01
+            :ARG0 (e / executive
+                  :mod (e2 / every)
+                  :ARG0-of (h / have-03
+                        :ARG1 (c / computer
+                              :mod (l / laptop)
+                              :ARG1-of b)))
+            :purpose (n / note-01
+                  :ARG0 e
+                  :ARG1 c)
+            :time (m2 / meet-03))
+      :snt2 (e3 / executive
+            :domain (p / person
+                  :name (n2 / name
+                        :op1 "Smith"))
+            :ARG0-of (o / own-01
+                  :ARG1 (c2 / computer
+                        :quant 5
+                        :mod (l2 / laptop)
+                        :ARG1-of (d / differ-02)))))
+
+# ::id 53
+# ::snt John wrote a report, and Bill said Peter did too.
+(a / and
+      :op1 (w / write-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :ARG1 (r / report-01))
+      :op2 (s / say-01
+            :ARG0 (p2 / person
+                  :name (n2 / name
+                        :op1 "Bill"))
+            :ARG1 (w2 / write-01
+                  :ARG0 (p3 / person
+                        :name (n3 / name
+                              :op1 "Peter"))
+                  :ARG1 (r2 / report-01
+                        :mod (t / too)))))
+
+# ::id 54
+# ::snt ITEL won more orders than APCOM. APCOM won ten orders.
+(m / multi-sentence
+      :snt1 (w / win-01
+            :ARG0 (c / company
+                  :name (n / name
+                        :op1 "ITEL"))
+            :ARG1 (o / order
+                  :quant (m2 / more)
+                  :ARG2-of (h / have-degree-91
+                        :ARG1 c
+                        :ARG3 m2)
+                  :ARG4 (c2 / company
+                        :name (n2 / name
+                              :op1 "APCOM"))))
+      :snt2 (w2 / win-01
+            :ARG0 (c3 / company
+                  :name (n3 / name
+                        :op1 "APCOM"))
+            :ARG1 (o2 / order
+                  :quant 10)))
+
+# ::id 55
+# ::snt All APCOM managers have company cars. Jones is an APCOM manager.
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (p / person
+                  :ARG0-of (m2 / manage-01
+                        :ARG1 (g / government-organization
+                              :name (n / name
+                                    :op1 "APCOM")))
+                  :mod (a / all))
+            :ARG1 (c / car
+                  :poss (c2 / company)))
+      :snt2 (p2 / person
+            :name (n2 / name
+                  :op1 "Jones")
+            :ARG0-of (m3 / manage-01
+                  :ARG1 g)))
+
+# ::id 56
+# ::snt University graduates make poor stock-market traders. Smith is a university graduate.
+(m / multi-sentence
+      :snt1 (m2 / make-05
+            :ARG0 (p / person
+                  :ARG1-of (g / graduate-01
+                        :ARG2 (u / university)))
+            :ARG1 (p2 / person
+                  :ARG0-of (t / trade-01
+                        :ARG1 (m3 / market
+                              :mod (s / stock)))
+                  :mod (p3 / poor)))
+      :snt2 (p4 / person
+            :name (n / name
+                  :op1 "Smith")
+            :ARG1-of (g2 / graduate-01
+                  :ARG2 (u2 / university))))
+
+# ::id 57
+# ::snt The PC-6082 is faster than every ITEL computer. The ITEL-ZX is an ITEL computer.
+(m / multi-sentence
+      :snt1 (h / have-degree-91
+            :ARG1 (c / computer
+                  :name (n / name
+                        :op1 "PC-6082"))
+            :ARG2 (f / fast-02
+                  :ARG1 c)
+            :ARG3 (m2 / more)
+            :ARG4 (c2 / computer
+                  :mod (e / every)
+                  :mod (c3 / company
+                        :name (n2 / name
+                              :op1 "ITEL"))))
+      :snt2 (c4 / computer
+            :domain (p / product
+                  :name (n3 / name
+                        :op1 "ITEL-ZX"))))
+
+# ::id 58
+# ::snt Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.
+(a / and
+      :op1 (s / suggest-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Bill"))
+            :ARG1 (r / recommend-01
+                  :ARG1 (g / go-02
+                        :ARG0 (t / they)
+                        :ARG4 (m / meet-03)
+                        :manner (t2 / together)))
+            :ARG2 (p2 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG1 (p3 / person
+                              :name (n2 / name
+                                    :op1 "Frank"))
+                        :ARG2 (b / boss))))
+      :op2 (s2 / suggest-01
+            :ARG0 p
+            :ARG2 (p4 / person
+                  :name (n3 / name
+                        :op1 "Carlos"))
+            :ARG2 (p5 / person
+                  :ARG0-of (h2 / have-rel-role-91
+                        :ARG1 (p6 / person
+                              :name (n4 / name
+                                    :op1 "Alan"))
+                        :ARG2 (w / wife)))))
+
+# ::id 59
+# ::snt The Ancient Greeks were noted philosophers.
+(p / philosopher
+      :ARG1-of (n / note-01)
+      :domain (p2 / person
+            :mod (a / ancient)
+            :mod (c / country
+                  :name (n2 / name
+                        :op1 "Greece"))))
+
+# ::id 60
+# ::snt At most two tenors will contribute their fees to charity.
+(c / contribute-01
+      :ARG0 (t / tenor
+            :quant (a / at-most
+                  :op1 2))
+      :ARG1 (f / fee
+            :poss t)
+      :ARG2 (c2 / charity))
+
+# ::id 61
+# ::snt APCOM has a more important customer than ITEL.
+(h / have-03
+      :ARG0 (c / company
+            :name (n / name
+                  :op1 "APCOM"))
+      :ARG1 (c2 / customer
+            :ARG1-of (h2 / have-degree-91
+                  :ARG2 (ii / important-01
+                        :ARG1 c2)
+                  :ARG3 (m / more)
+                  :ARG4 (c3 / customer
+                        :mod (c4 / company
+                              :name (n2 / name
+                                    :op1 "ITEL"))))))
+
+# ::id 62
+# ::snt Smith saw Jones sign the contract and his secretary make a copy.
+(s / see-01
+      :ARG0 (p / person
+            :name (n / name
+                  :op1 "Smith"))
+      :ARG1 (a / and
+            :op1 (s2 / sign-01
+                  :ARG0 (p2 / person
+                        :name (n2 / name
+                              :op1 "Jones"))
+                  :ARG1 (c / contract))
+            :op2 (m / make-01
+                  :ARG0 (p3 / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 p2
+                              :ARG2 (s3 / secretary)))
+                  :ARG1 (t / thing
+                        :ARG1-of (c2 / copy-01)))))
+
+# ::id 63
+# ::snt John spoke to Mary at four o'clock. And Bill did at five o'clock.
+(m / multi-sentence
+      :snt1 (s / speak-01
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "John"))
+            :ARG2 (p2 / person
+                  :name (n2 / name
+                        :op1 "Mary"))
+            :time (d / date-entity
+                  :time "4:00"))
+      :snt2 (s2 / speak-01
+            :ARG0 (p3 / person
+                  :name (n3 / name
+                        :op1 "Bill"))
+            :time (d2 / date-entity
+                  :time "5:00")))
+
+# ::id 64
+# ::snt While Jones was updating the program, Mary came in and told him about the board meeting. She finished before he did.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (c / come-01
+                  :ARG1 (p / person
+                        :name (n / name
+                              :op1 "Mary"))
+                  :ARG4 (h / he))
+            :op2 (t / tell-01
+                  :ARG0 p
+                  :ARG1 (m2 / meet-03
+                        :ARG0 (b / board))
+                  :ARG2 (p2 / person
+                        :name (n2 / name
+                              :op1 "Jones")))
+            :time (u / update-02
+                  :ARG0 p2
+                  :ARG1 (p3 / program)))
+      :snt2 (f / finish-01
+            :ARG0 (s / she)
+            :time (b2 / before
+                  :op1 (d / do-02
+                        :ARG0 (h2 / he)))))
+
+# ::id 65
+# ::snt Every representative or client was at the meeting.
+(o / or
+      :op1 (p / person
+            :ARG0-of (r / represent-01))
+      :op2 (p2 / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (c / client))
+            :mod (e / every))
+      :location (m / meet-03))
+
+# ::id 66
+# ::snt Every student used her workstation. Mary is a student.
+(m / multi-sentence
+      :snt1 (u / use-01
+            :ARG0 (p / person
+                  :ARG0-of (s / study-01)
+                  :mod (e / every))
+            :ARG1 (w / workstation
+                  :poss p))
+      :snt2 (p2 / person
+            :name (n / name
+                  :op1 "Mary")
+            :ARG0-of (s2 / study-01)))
+
+# ::id 67
+# ::snt Smith lost some files. They were destroyed when her hard disk crashed.
+(m / multi-sentence
+      :snt1 (l / lose-02
+            :ARG0 (p / person
+                  :name (n / name
+                        :op1 "Smith"))
+            :ARG1 (f / file
+                  :quant (s / some)))
+      :snt2 (d / destroy-01
+            :ARG1 (t / they)
+            :time (c / crash-01
+                  :ARG1 (d2 / disk
+                        :mod (h / hard)
+                        :poss (s2 / she)))))
+
+# ::id 68
+# ::snt A lawyer signed every report, and so did an auditor. That is, there was one lawyer who signed all the reports.
+(m / multi-sentence
+      :snt1 (a / and
+            :op1 (s / sign-01
+                  :ARG0 (l / lawyer)
+                  :ARG1 (r / report
+                        :mod (e / every)))
+            :op2 (s2 / sign-01
+                  :ARG0 (p / person
+                        :ARG0-of (a2 / audit-01))))
+      :snt2 (s3 / sign-01
+            :ARG0 (l2 / lawyer
+                  :quant 1)
+            :ARG1 (r2 / report
+                  :mod (a3 / all))))
+
+# ::id 69
+# ::snt All legal authorities are law lecturers. All law lecturers are legal authorities.
+(m / multi-sentence
+      :snt1 (p / person
+            :ARG0-of (l / lecture-01
+                  :ARG1 (l2 / law))
+            :domain (a / authority
+                  :ARG1-of (l3 / legal-02)
+                  :mod (a2 / all)))
+      :snt2 (a3 / authority
+            :mod (l4 / law)
+            :domain (p2 / person
+                  :ARG0-of (l5 / lecture-01
+                        :ARG1 (l6 / law))
+                  :mod (a4 / all))))
