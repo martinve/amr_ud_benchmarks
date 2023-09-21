@@ -4,7 +4,7 @@ import numpy as np
 import scipy.stats as st
 from scipy.stats import pearsonr, hmean, gmean, spearmanr, rankdata
 from sklearn.metrics import auc, roc_curve
-import convert_tests as conv
+import tools.convert_tests as conv
 
 
 def get_predicted_scores(lines, f = lambda x: x.split()[-1]):
@@ -97,7 +97,6 @@ def convert_labels(labels):
 if __name__ == "__main__":
 
     benchmarks = ["sick", "fracas", "hans", "allen"]
-    benchmarks = ["allen"]
 
     scores = []
 
@@ -109,7 +108,7 @@ if __name__ == "__main__":
 
     for bench in benchmarks:
         pred = conv.read_prediction(bench)
-        gold = conv.read_file(f"bench_{bench}_label.txt")
+        gold = conv.read_gold_labels(bench)
 
         gold = convert_labels(gold)
 
@@ -117,9 +116,12 @@ if __name__ == "__main__":
 
         score = evaluate_with_function(gold, pred, fun=evalfun)
         scores.append(score)
-        print(bench, score)
+        print(f"Score ({bench}): {score}")
+
+    print(scores)
 
     scores_without_sick = scores[1:]
+    print(scores_without_sick)
     
     if isinstance(scores[0], list):
         scores = np.array(scores)

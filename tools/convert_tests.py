@@ -12,8 +12,8 @@ We want to generate AMR parse trees named:
     bench_<benchmark>.txt.amrhypothesis
 """
 
-datadir = cfg.datadir
-resultdir = cfg.resultdir
+datadir = cfg.data_dir
+resultdir = cfg.result_dir
 server_url = cfg.server_url
 
 
@@ -24,12 +24,18 @@ def read_file(name):
     return s
 
 def read_prediction(name):
-    f = open(f"{resultdir}/bench_{name}-simpleMetricP.txt")
+    f = open(f"{resultdir}/tests_amr_{name}-simpleMetricP.txt")
     s = f.readlines()
     f.close
     s = [float(x) for x in s]
     return s
 
+def read_gold_labels(name):
+    print("Read gold from", datadir)
+    f = open(f"{datadir}/tests_amr_{name}_label.txt")
+    s = f.read()
+    f.close
+    return s
 
 def get_amr_graph(sent):
     try:
@@ -43,8 +49,8 @@ def get_amr_graph(sent):
 
 
 def extract_amr(benchmark,field):
-    sents = read_file(f"bench_{benchmark}_{field}.txt")
-    with open(f"{datadir}/bench_{benchmark}.txt.amr{field}", "w") as outfile:
+    sents = read_file(f"tests_amr_{benchmark}_{field}.txt")
+    with open(f"{datadir}/tests_amr_{benchmark}.txt.amr{field}", "w") as outfile:
         k = 0
 
         sents = sents.split("\n")
@@ -69,5 +75,5 @@ def convert_benchmark(benchmark):
 
 
 if __name__ == "__main__":
-    convert_benchmark("allen")
+    # convert_benchmark("allen")
     pass
