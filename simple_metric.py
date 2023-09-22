@@ -36,7 +36,7 @@ def simple_overlap(amrs1, amrs2):
         toks_2 = get_nodes_edges(a2)
         intersec = set(toks_1).intersection(set(toks_2))
         union = set(toks_1)
-        score =  len(intersec) / len(union)
+        score = len(intersec) / len(union)
         return score
     
     def rec(a1, a2):
@@ -54,10 +54,14 @@ def simple_overlap(amrs1, amrs2):
     return out
 
 
-a1 = read_amr_file(sys.argv[1])
-a2 = read_amr_file(sys.argv[2])
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        sys.exit(-1)
 
-result = simple_overlap(a1, a2)
+    a1 = read_amr_file(sys.argv[1])
+    a2 = read_amr_file(sys.argv[2])
 
-print("\n".join([str(num) for num in result]))
+    result = simple_overlap(a1, a2)
+
+    print("\n".join([str(num) for num in result]))
 

@@ -3,7 +3,7 @@ import sys
 import numpy as np
 import scipy.stats as st
 from scipy.stats import pearsonr, hmean, gmean, spearmanr, rankdata
-from sklearn.metrics import auc, roc_curve
+import sklearn.metrics as sk
 import tools.convert_tests as conv
 
 
@@ -29,21 +29,29 @@ def evaluate_with_function(ys, xs, fun):
 
 def area_uc(ys, xs):
     assert len(xs) == len(ys)
-    fpr, tpr, thresholds = roc_curve(ys, xs, pos_label=1)
-    return auc(fpr, tpr)
+    fpr, tpr, thresholds = sk.roc_curve(ys, xs, pos_label=1)
+    aucval = sk.auc(fpr, tpr)
+    return aucval
 
 
 def perc(xs, t=5):
     xsi = enumerate(xs)
+    print(xs, len(xs))
     xsi = sorted(xsi, key=lambda x:x[1], reverse=True)
     p = int((len(xsi)/100)*t)
+    print(p)
     pxsi = xsi[:p]
     nxsi = xsi[p:]
     new = [0.0] * len(xs)
+
     for i, _ in pxsi:
         new[i] = 1
     for i, _ in nxsi:
         new[i] = 0
+
+    print(new)
+    sys.exit(-1)
+
     return new
 
 def acc_of_ones(ys, xs, t=5):
@@ -98,13 +106,20 @@ if __name__ == "__main__":
 
     benchmarks = ["sick", "fracas", "hans", "allen"]
 
+    if len(sys.argv) >1:
+        if sys.argv[1] in benchmarks:
+            benchmarks = [sys.argv[1]]
+
+    evalfun = area_uc
+    if len(sys.argv) > 2:
+        evalfun = acc_of_ones_thres
+
     scores = []
 
     # default evaluation function
-    evalfun = area_uc 
-    
+
     # use this function for evaluating according to thresholds
-    evalfun = acc_of_ones_thres
+
 
     for bench in benchmarks:
         pred = conv.read_prediction(bench)
